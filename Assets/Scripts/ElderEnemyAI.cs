@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class BasicEnemyAI : MonoBehaviour
+public class ElderEnemyAI : MonoBehaviour
 {
     public float Speed = 0.1f;
     private GameObject[] players;
@@ -22,7 +22,7 @@ public class BasicEnemyAI : MonoBehaviour
 
     void Update()
     {
-        
+
     }
 
     private void FixedUpdate() 
