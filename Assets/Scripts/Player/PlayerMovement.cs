@@ -6,6 +6,7 @@ namespace Player
 {
     [RequireComponent(typeof(CharacterController))]
     [RequireComponent(typeof(NoiseGenerator))]
+    [RequireComponent(typeof(PlayerAnimationController))]
     public class PlayerMovement : MonoBehaviour
     {
         [Header("Speed")]
@@ -26,9 +27,9 @@ namespace Player
 
         [HideInInspector]
         public bool IsSprinting = false;
-
         private CharacterController characterController;
         private NoiseGenerator noiseGenerator;
+        private PlayerAnimationController animationController;
 
         private Vector3 moveDirection = Vector3.zero;
         private float speed => IsSprinting ? sprintSpeed : walkSpeed; 
@@ -37,12 +38,28 @@ namespace Player
         {
             characterController = GetComponent<CharacterController>();
             noiseGenerator = GetComponent<NoiseGenerator>();
+            animationController = GetComponent<PlayerAnimationController>();
         }
 
         private void FixedUpdate()
         {
             characterController.SimpleMove(moveDirection * speed);
             noiseGenerator.MakeNoise((IsSprinting ? sprintNoiseLevel : walkNoiseLevel) * Time.deltaTime, IsSprinting ? walkNoiseRange : sprintNoiseRange);
+            if(Vector3.Equals(moveDirection, Vector3.zero))
+            {
+                animationController.SetRun(false);
+                animationController.SetWalk(false);
+            }
+            else if(IsSprinting)
+            {
+                animationController.SetRun(true);
+                animationController.SetWalk(false);
+            }
+            else
+            {
+                animationController.SetRun(false);
+                animationController.SetWalk(true);
+            }
         }
 
         public void SetMoveDirection(Vector2 direction)
