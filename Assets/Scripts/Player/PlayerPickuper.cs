@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
 
 namespace Player
 {
     [RequireComponent(typeof(PlayerInventory))]
+    [RequireComponent(typeof(ServerInventory))]
     public class PlayerPickuper : MonoBehaviour
     {
         [Header("References")]
@@ -16,12 +18,14 @@ namespace Player
         private float pickupDuration;
 
         private PlayerInventory playerInventory;
+        private ServerInventory serverInventory;
 
         private bool canPickup = true;
 
         private void Start()
         {
             playerInventory = GetComponent<PlayerInventory>();
+            serverInventory = GetComponent<ServerInventory>();
         }
 
         public void PickUpObject(GameObject gameObject)
@@ -30,12 +34,12 @@ namespace Player
             {
                 return;
             }
-            Rigidbody rigidbody = gameObject.GetComponent<Rigidbody>();
-            StartCoroutine(PickupCoroutine(rigidbody));
+            StartCoroutine(PickupCoroutine(gameObject));
         }
 
-        private IEnumerator PickupCoroutine(Rigidbody rigidbody)
+        private IEnumerator PickupCoroutine(GameObject pickup)
         {
+            Rigidbody rigidbody = pickup.GetComponent<Rigidbody>();
             rigidbody.isKinematic = true;
             Collider collider = rigidbody.GetComponent<Collider>();
             collider.isTrigger = true;
@@ -48,7 +52,7 @@ namespace Player
                 yield return null;
             }
             playerInventory.AddObject(rigidbody.gameObject);
-            Destroy(rigidbody.gameObject);
+            serverInventory.PickupPickupServerRpc(pickup.GetComponent<NetworkObject>().NetworkObjectId);
             canPickup = true;
         }
     }

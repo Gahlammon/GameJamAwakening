@@ -45,6 +45,11 @@ namespace Player
             }
         }
 
+        public PickupController.PickupType GetHeldPickupType()
+        {
+            return inventory[index].Prefab.GetComponent<PickupController>().Type;
+        }
+
         public GameObject GetInstancedObject()
         {
             if (inventory.Count <= 0)

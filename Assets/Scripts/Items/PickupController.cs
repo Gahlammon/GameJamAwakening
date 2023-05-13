@@ -1,11 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class PickupController : MonoBehaviour
+public class PickupController : NetworkBehaviour
 {
-    private bool isPickedUp = false;
+    public enum PickupType
+    {
+        Bootle,
+        Knife,
+        Brick,
+        Pipe
+    }
+
+    [SerializeField]
+    private PickupType type;
+
+    public PickupType Type => type;
+
     private bool isThrown = false;
 
     private new Rigidbody rigidbody;
@@ -20,12 +33,7 @@ public class PickupController : MonoBehaviour
 
     public bool TryToPickup()
     {
-        if (isPickedUp || isThrown)
-        {
-            return false;
-        }
-        isPickedUp = true;
-        return true;
+        return !isThrown;
     }
 
     public void Throw(Vector3 force)

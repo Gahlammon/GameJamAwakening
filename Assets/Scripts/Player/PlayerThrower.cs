@@ -6,6 +6,7 @@ namespace Player
 {
     [RequireComponent(typeof(PlayerInventory))]
     [RequireComponent(typeof(PlayerAimer))]
+    [RequireComponent(typeof(ServerInventory))]
     public class PlayerThrower : MonoBehaviour
     {
         [Header("References")]
@@ -22,11 +23,13 @@ namespace Player
 
         private bool canThrow = true;
 
+        private ServerInventory serverInventory;
         private PlayerInventory playerInventory;
         private PlayerAimer playerAimer;
 
         private void Start()
         {
+            serverInventory = GetComponent<ServerInventory>();
             playerInventory = GetComponent<PlayerInventory>();
             playerAimer = GetComponent<PlayerAimer>();
         }
@@ -40,14 +43,7 @@ namespace Player
 
             float forceMagnitude = Mathf.Lerp(throwStrength.x, throwStrength.y, holdTime / maxHoldTime);
             Vector3 forceDirection = playerAimer.AimDirection;
-            GameObject gameObject = playerInventory.GetInstancedObject();
-            if (gameObject == null)
-            {
-                return;
-            }
-            PickupController controller = gameObject.GetComponent<PickupController>();
-            controller.transform.position = throwOrigin.position;
-            controller.Throw(forceDirection * forceMagnitude);
+            serverInventory.ThrowPickupServerRpc(playerInventory.GetHeldPickupType(), forceDirection * forceMagnitude);
             canThrow = false;
             StartCoroutine(CooldownCoroutine());
         }
