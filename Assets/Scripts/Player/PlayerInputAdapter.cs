@@ -11,6 +11,10 @@ namespace Player
     [RequireComponent(typeof(PlayerInventory))]
     public class PlayerInputAdapter : MonoBehaviour
     {
+        [Header("Config")]
+        [SerializeField]
+        private float deadzone = 0.1f;
+
         private PlayerMovement playerMovement;
         private PlayerThrower playerThrower;
         private PlayerAimer playerAimer;
@@ -28,12 +32,12 @@ namespace Player
 
         public void Move(InputAction.CallbackContext context)
         {
-            playerMovement.SetMoveDirection(context.ReadValue<Vector2>());
+            playerMovement.SetMoveDirection(ApplyDeadzoneToInput(context.ReadValue<Vector2>()));
         }
 
         public void Aim(InputAction.CallbackContext context)
         {
-            playerAimer.SetAimSpeed(context.ReadValue<Vector2>());
+            playerAimer.SetAimSpeed(ApplyDeadzoneToInput(context.ReadValue<Vector2>()));
         }
 
         public void Run(InputAction.CallbackContext context)
@@ -74,6 +78,15 @@ namespace Player
             {
                 playerInventory.ChangeIndex(1);
             }
+        }
+
+        private Vector2 ApplyDeadzoneToInput(Vector2 input)
+        {
+            if (input.magnitude < deadzone)
+            {
+                return Vector2.zero;
+            }
+            return input.normalized * ((input.magnitude - deadzone) / (1 - deadzone));
         }
     }
 }
