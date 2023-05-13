@@ -23,23 +23,21 @@ namespace Player
         {
             if(death)
             {
-                animator.Play("BaseLayer.Death");
                 death = false;
+                animator.Play("BaseLayer.Death");
             }
             else if(toThrow)
             {
-                animator.Play("BaseLayer.Throw");
                 toThrow = false;
+                animator.Play("BaseLayer.Throw");
             }
             else if(run)
             {
                 animator.Play("BaseLayer.Run");
-                run = false;
             }
             else if(walk)
             {
                 animator.Play("BaseLayer.Walk");
-                walk = false;
             }
             else
             {
