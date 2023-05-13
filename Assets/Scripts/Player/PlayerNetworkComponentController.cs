@@ -51,6 +51,7 @@ namespace Player
                 return;
             }
 
+            CameraPlayerFollower.Instance.SetPlayerTransform(transform);
             playerMovement.enabled = true;
             playerInput.enabled = true;
             pickupColliderGameObject.SetActive(true);
