@@ -1,40 +1,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ServerPlayerSpawnPoints : MonoBehaviour
+public class ServerPlayerSpawnPoints : Singleton<ServerPlayerSpawnPoints>
 {
     [SerializeField]
-    List<GameObject> m_SpawnPoints;
+    private List<Transform> spawnPoints;
 
-    static ServerPlayerSpawnPoints s_Instance;
+    private IEnumerator<Transform> spawnPointsEnumerator;
 
-    public static ServerPlayerSpawnPoints Instance
+    private void Start()
     {
-        get
-        {
-            if (s_Instance == null)
-            {
-                s_Instance = FindObjectOfType<ServerPlayerSpawnPoints>();
-            }
-
-            return s_Instance;
-        }
+        spawnPointsEnumerator = spawnPoints.GetEnumerator();
     }
 
-    void OnDestroy()
+    public Transform ConsumeNextSpawnPoint()
     {
-        s_Instance = null;
-    }
-
-    public GameObject ConsumeNextSpawnPoint()
-    {
-        if (m_SpawnPoints.Count == 0)
+        if (spawnPoints.Count == 0)
         {
             return null;
         }
-        
-        var toReturn = m_SpawnPoints[m_SpawnPoints.Count - 1];
-        m_SpawnPoints.RemoveAt(m_SpawnPoints.Count - 1);
-        return toReturn;
+
+        if(!spawnPointsEnumerator.MoveNext())
+        {
+            spawnPointsEnumerator.Reset();
+            spawnPointsEnumerator.MoveNext();
+        }
+
+        Transform point = spawnPointsEnumerator.Current;
+        return point;
     }
 }
