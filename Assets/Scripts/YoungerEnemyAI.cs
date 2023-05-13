@@ -6,10 +6,13 @@ using UnityEngine.AI;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(NavMeshAgent))]
+[RequireComponent(typeof(Animator))]
 public class YoungerEnemyAI : MonoBehaviour
 {
     [SerializeField]
     private float maxNoise = 10;
+    [SerializeField] 
+    private float range = 1;
     private float currentNoise = 0;
     public float Speed = 0.1f;
     private Vector3 nextTarget;
@@ -18,56 +21,89 @@ public class YoungerEnemyAI : MonoBehaviour
     private YoungerEnemyStates nextState;
     private Rigidbody rb;
     private NavMeshAgent agent;
+    private Animator animator;
     public enum YoungerEnemyStates 
     {
         Sleep,
-        Patrol,
+        Wake,
+        Idle,
         Sound,
-        Player
+        Player,
+        Attack,
+        Death
     }
 
     private void Start() 
     {
+        animator = GetComponent<Animator>();
         if(maxNoise>0)
         {
             state = YoungerEnemyStates.Sleep;
             nextState = YoungerEnemyStates.Sleep;
+            animator.Play("BaseLayer.Sleep");
+            agent.enabled = false;
         }
         else
         {
-            state = YoungerEnemyStates.Patrol;
-            nextState = YoungerEnemyStates.Patrol;
+            state = YoungerEnemyStates.Idle;
+            nextState = YoungerEnemyStates.Idle;
+            animator.Play("BaseLayer.Idle");
         }
         players = GameObject.FindGameObjectsWithTag("Player");
         rb = GetComponent<Rigidbody>();
         rb.isKinematic = true;
         agent = GetComponent<NavMeshAgent>();
-        agent.SetDestination(transform.position + transform.forward);
-        nextTarget = transform.position + transform.forward;
+        agent.angularSpeed = 0;
     }
 
     private void FixedUpdate() 
     {
-        if(state == YoungerEnemyStates.Sleep)
+
+        switch (state)
         {
-            CheckSight();
-            if(nextState == YoungerEnemyStates.Patrol)
-            {
-                RaycastHit hit;
-                if(Physics.Raycast(transform.position, nextTarget - transform.position, out hit, 1))
+            case YoungerEnemyStates.Sleep:
+            
+                break;
+            case YoungerEnemyStates.Idle:
+                if(!CheckSight())
                 {
-                    if(!hit.collider.gameObject.CompareTag("Player"))
+                    nextState = YoungerEnemyStates.Idle;
+                }
+                break;
+            case YoungerEnemyStates.Sound:
+                agent.SetDestination(nextTarget);
+                if(!CheckSight())
+                {
+                    if(agent.remainingDistance < 0.1)
                     {
-                        nextTarget = Random.insideUnitSphere;
-                        Debug.Log(nextTarget);
-                        nextTarget.y = 0;
-                        nextTarget = nextTarget.normalized;
+                        nextState = YoungerEnemyStates.Idle;
+                    }
+                    else
+                    {
+                        nextState = YoungerEnemyStates.Sound;
                     }
                 }
-            }
+                break;
+            case YoungerEnemyStates.Player:
+                agent.SetDestination(nextTarget);
+                if(!CheckSight())
+                {
+                    nextState = YoungerEnemyStates.Sound;
+                }
+                RaycastHit hit;
+                if(Physics.Raycast(transform.position, nextTarget - transform.position, out hit, range))
+                {
+                    if(hit.collider.gameObject.CompareTag("Player"))
+                    {
+                        nextState = YoungerEnemyStates.Attack;
+                    }
+                }
+                break;
+            case YoungerEnemyStates.Attack:
+                nextState = YoungerEnemyStates.Idle;
+                break;
         }
         state = nextState;
-        agent.SetDestination(nextTarget);
     }
 
     private bool CheckSight()
@@ -84,8 +120,38 @@ public class YoungerEnemyAI : MonoBehaviour
                     return true;
                 }
             }
+            
         }
         return false;
+    }
+
+    private void UseAnimation()
+    {
+        switch (state)
+        {
+            case YoungerEnemyStates.Sleep:
+                animator.Play("BaseLayer.Sleep");
+                break;
+            case YoungerEnemyStates.Wake:
+                animator.Play("BaseLayer.Wake");
+                agent.enabled = true;
+                break;
+            case YoungerEnemyStates.Idle:
+                animator.Play("BaseLayer.Idle");
+                break;
+            case YoungerEnemyStates.Sound:
+                animator.Play("BaseLayer.Run");
+                break;
+            case YoungerEnemyStates.Player:
+                animator.Play("BaseLayer.Run");
+                break;
+            case YoungerEnemyStates.Attack:
+                animator.Play("BaseLayer.Attack");
+                break;
+            case YoungerEnemyStates.Death:
+                animator.Play("BaseLayer.Death");
+                break;
+        }
     }
 
     public void Sound(Vector3 source, float amount)
@@ -95,7 +161,7 @@ public class YoungerEnemyAI : MonoBehaviour
             currentNoise += amount;
             if(currentNoise <= maxNoise)
             {
-                nextState = YoungerEnemyStates.Sound;
+                nextState = YoungerEnemyStates.Wake;
                 nextTarget = source;
             }
         }
@@ -105,6 +171,4 @@ public class YoungerEnemyAI : MonoBehaviour
             nextTarget = source;
         }
     }
-
-    
 }
