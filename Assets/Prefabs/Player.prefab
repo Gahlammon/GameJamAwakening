@@ -83,6 +83,7 @@ GameObject:
   - component: {fileID: 8842640971469772446}
   - component: {fileID: 6452312218806428551}
   - component: {fileID: 1047557192520679573}
+  - component: {fileID: 4431217033507891934}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -291,6 +292,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 5
   sprintSpeed: 10
+  walkNoiseRange: 1
+  walkNoiseLevel: 5
+  sprintNoiseRange: 10
+  sprintNoiseLevel: 20
   IsSprinting: 0
 --- !u!114 &6068149115754199556
 MonoBehaviour:
@@ -425,6 +430,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 165745eb56ccb9741bb9a75cab391c2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4431217033507891934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4710847496902817279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b60abccbfd0cd3744a17fadfa1c17825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4710847497281351021
