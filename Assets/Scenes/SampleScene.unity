@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -546,7 +546,7 @@ MonoBehaviour:
   NetworkConfig:
     ProtocolVersion: 0
     NetworkTransport: {fileID: 134740333}
-    PlayerPrefab: {fileID: 1116025501350672692, guid: 2cab98b78e42a99419e880146cc73b83, type: 3}
+    PlayerPrefab: {fileID: 4710847496902817279, guid: 489466d9aa2910d49925c0e441b6c976, type: 3}
     NetworkPrefabs: []
     TickRate: 30
     ClientConnectionBufferTimeout: 10
@@ -608,11 +608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f79639df9de7c0548af31d9cfae6b79c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoints:
-  - {fileID: 1761321619}
-  - {fileID: 528602718}
-  - {fileID: 1443876749}
-  - {fileID: 814848290}
+  spawnPoints: []
 --- !u!4 &521110296
 Transform:
   m_ObjectHideFlags: 0
