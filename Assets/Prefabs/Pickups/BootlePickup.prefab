@@ -94,6 +94,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  uISprite: {fileID: -1136025636, guid: 6355917ae934c5843b4b22b698360a1c, type: 3}
 --- !u!114 &2693092276382774766
 MonoBehaviour:
   m_ObjectHideFlags: 0

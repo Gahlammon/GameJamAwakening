@@ -16,8 +16,11 @@ public class PickupController : NetworkBehaviour
 
     [SerializeField]
     private PickupType type;
+    [SerializeField]
+    private Sprite uISprite;
 
     public PickupType Type => type;
+    public Sprite UISprite => uISprite;
 
     private bool isThrown = false;
 

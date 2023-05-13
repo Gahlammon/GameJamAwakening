@@ -8,11 +8,13 @@ namespace Player
     [RequireComponent(typeof(PlayerMovement))]
     [RequireComponent(typeof(PlayerThrower))]
     [RequireComponent(typeof(PlayerAimer))]
+    [RequireComponent(typeof(PlayerInventory))]
     public class PlayerInputAdapter : MonoBehaviour
     {
         private PlayerMovement playerMovement;
         private PlayerThrower playerThrower;
         private PlayerAimer playerAimer;
+        private PlayerInventory playerInventory;
 
         private float startThrowTimestamp;
 
@@ -21,6 +23,7 @@ namespace Player
             playerMovement = GetComponent<PlayerMovement>();
             playerThrower = GetComponent<PlayerThrower>();
             playerAimer = GetComponent<PlayerAimer>();
+            playerInventory = GetComponent<PlayerInventory>();
         }
 
         public void Move(InputAction.CallbackContext context)
@@ -54,6 +57,22 @@ namespace Player
             if (context.canceled)
             {
                 playerThrower.Throw(Time.time - startThrowTimestamp);
+            }
+        }
+
+        public void PreviousItem(InputAction.CallbackContext context)
+        {
+            if (context.started)
+            {
+                playerInventory.ChangeIndex(-1);
+            }
+        }
+
+        public void NextItem(InputAction.CallbackContext context)
+        {
+            if (context.started)
+            {
+                playerInventory.ChangeIndex(1);
             }
         }
     }

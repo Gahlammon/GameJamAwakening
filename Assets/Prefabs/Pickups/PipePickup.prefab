@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: type
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2867778873081097414, guid: a0dc40fe29783614db0e50ba53a59bdb, type: 3}
+      propertyPath: uISprite
+      value: 
+      objectReference: {fileID: -1596264400, guid: 9a818862cd8dbd8408257a3238b87516, type: 3}
     - target: {fileID: 6658094803286632506, guid: a0dc40fe29783614db0e50ba53a59bdb, type: 3}
       propertyPath: m_Sprite
       value: 

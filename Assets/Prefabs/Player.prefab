@@ -228,6 +228,38 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: bbb308b2-b95d-400c-bf3d-8dee8b46d397
     m_ActionName: Game/Throw[/XInputControllerWindows/rightTrigger]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4710847496902817269}
+        m_TargetAssemblyTypeName: Player.PlayerInputAdapter, Assembly-CSharp
+        m_MethodName: PreviousItem
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 84dd778c-bd92-4984-87b4-ffc810fc21fa
+    m_ActionName: Game/Previous Item[/XInputControllerWindows/leftShoulder]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4710847496902817269}
+        m_TargetAssemblyTypeName: Player.PlayerInputAdapter, Assembly-CSharp
+        m_MethodName: NextItem
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 50268695-6225-48d7-ab6a-a2e1ec7d2a2d
+    m_ActionName: Game/Next Item[/XInputControllerWindows/rightShoulder]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Game
