@@ -297,7 +297,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8824941273121221721, guid: 9457ec4162ceeb747b967bb8b7a5d7cf, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8824941273121221725, guid: 9457ec4162ceeb747b967bb8b7a5d7cf, type: 3}
       propertyPath: m_Pivot.x
@@ -608,7 +608,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f79639df9de7c0548af31d9cfae6b79c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoints: []
+  spawnPoints:
+  - {fileID: 1761321619}
+  - {fileID: 528602718}
+  - {fileID: 1443876749}
+  - {fileID: 814848290}
 --- !u!4 &521110296
 Transform:
   m_ObjectHideFlags: 0
