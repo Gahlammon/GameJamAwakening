@@ -8,6 +8,9 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class YoungerEnemyAI : MonoBehaviour
 {
+    [SerializeField]
+    private float maxNoise = 10;
+    private float currentNoise = 0;
     public float Speed = 0.1f;
     private Vector3 nextTarget;
     private GameObject[] players;
@@ -17,6 +20,7 @@ public class YoungerEnemyAI : MonoBehaviour
     private NavMeshAgent agent;
     public enum YoungerEnemyStates 
     {
+        Sleep,
         Patrol,
         Sound,
         Player
@@ -24,8 +28,16 @@ public class YoungerEnemyAI : MonoBehaviour
 
     private void Start() 
     {
-        state = YoungerEnemyStates.Patrol;
-        nextState = YoungerEnemyStates.Patrol;
+        if(maxNoise>0)
+        {
+            state = YoungerEnemyStates.Sleep;
+            nextState = YoungerEnemyStates.Sleep;
+        }
+        else
+        {
+            state = YoungerEnemyStates.Patrol;
+            nextState = YoungerEnemyStates.Patrol;
+        }
         players = GameObject.FindGameObjectsWithTag("Player");
         rb = GetComponent<Rigidbody>();
         rb.isKinematic = true;
@@ -36,18 +48,21 @@ public class YoungerEnemyAI : MonoBehaviour
 
     private void FixedUpdate() 
     {
-        CheckSight();
-        if(nextState == YoungerEnemyStates.Patrol)
+        if(state == YoungerEnemyStates.Sleep)
         {
-            RaycastHit hit;
-            if(Physics.Raycast(transform.position, nextTarget - transform.position, out hit, 1))
+            CheckSight();
+            if(nextState == YoungerEnemyStates.Patrol)
             {
-                if(!hit.collider.gameObject.CompareTag("Player"))
+                RaycastHit hit;
+                if(Physics.Raycast(transform.position, nextTarget - transform.position, out hit, 1))
                 {
-                    nextTarget = Random.insideUnitSphere;
-                    Debug.Log(nextTarget);
-                    nextTarget.y = 0;
-                    nextTarget = nextTarget.normalized;
+                    if(!hit.collider.gameObject.CompareTag("Player"))
+                    {
+                        nextTarget = Random.insideUnitSphere;
+                        Debug.Log(nextTarget);
+                        nextTarget.y = 0;
+                        nextTarget = nextTarget.normalized;
+                    }
                 }
             }
         }
@@ -73,12 +88,23 @@ public class YoungerEnemyAI : MonoBehaviour
         return false;
     }
 
-    public void Sound(Vector3 source)
+    public void Sound(Vector3 source, float amount)
     {
+        if(state == YoungerEnemyStates.Sleep)
+        {
+            currentNoise += amount;
+            if(currentNoise <= maxNoise)
+            {
+                nextState = YoungerEnemyStates.Sound;
+                nextTarget = source;
+            }
+        }
         if(state != YoungerEnemyStates.Player)
         {
             nextState = YoungerEnemyStates.Sound;
             nextTarget = source;
         }
     }
+
+    
 }
