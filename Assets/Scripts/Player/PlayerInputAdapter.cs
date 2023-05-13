@@ -6,13 +6,18 @@ using UnityEngine.InputSystem;
 namespace Player
 {
     [RequireComponent(typeof(PlayerMovement))]
+    [RequireComponent(typeof(PlayerThrower))]
     public class PlayerInputAdapter : MonoBehaviour
     {
         private PlayerMovement playerMovement;
+        private PlayerThrower playerThrower;
+
+        private float startThrowTimestamp;
 
         private void Start()
         {
             playerMovement = GetComponent<PlayerMovement>();
+            playerThrower = GetComponent<PlayerThrower>();
         }
 
         public void Move(InputAction.CallbackContext context)
@@ -41,11 +46,11 @@ namespace Player
         {
             if (context.started)
             {
-                print("Start throw");
+                startThrowTimestamp = Time.time;
             }
-            else if (context.canceled)
+            if (context.canceled)
             {
-                print("Stop throw");
+                playerThrower.Throw(Time.time - startThrowTimestamp);
             }
         }
     }
