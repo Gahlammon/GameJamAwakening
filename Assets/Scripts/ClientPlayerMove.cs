@@ -1,5 +1,4 @@
 using System;
-using StarterAssets;
 using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.InputSystem;
