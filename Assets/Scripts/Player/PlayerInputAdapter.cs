@@ -6,10 +6,13 @@ using UnityEngine.InputSystem;
 namespace Player
 {
     [RequireComponent(typeof(PlayerMovement))]
+    [RequireComponent(typeof(PlayerThrower))]
+    [RequireComponent(typeof(PlayerAimer))]
     public class PlayerInputAdapter : MonoBehaviour
     {
         private PlayerMovement playerMovement;
         private PlayerThrower playerThrower;
+        private PlayerAimer playerAimer;
 
         private float startThrowTimestamp;
 
@@ -17,6 +20,7 @@ namespace Player
         {
             playerMovement = GetComponent<PlayerMovement>();
             playerThrower = GetComponent<PlayerThrower>();
+            playerAimer = GetComponent<PlayerAimer>();
         }
 
         public void Move(InputAction.CallbackContext context)
@@ -26,7 +30,7 @@ namespace Player
 
         public void Aim(InputAction.CallbackContext context)
         {
-            print("Aim: " + context.ReadValue<Vector2>().ToString());
+            playerAimer.SetAimSpeed(context.ReadValue<Vector2>());
         }
 
         public void Run(InputAction.CallbackContext context)

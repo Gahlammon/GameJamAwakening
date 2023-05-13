@@ -3,34 +3,37 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.Netcode;
 
-[RequireComponent(typeof(CharacterController))]
-[DefaultExecutionOrder(0)]
-public class PlayerServerSpawner : NetworkBehaviour
+namespace Player
 {
-    private CharacterController controller;
-
-    private void Awake()
+    [DefaultExecutionOrder(0)]
+    [RequireComponent(typeof(CharacterController))]
+    public class PlayerServerSpawner : NetworkBehaviour
     {
-        controller = GetComponent<CharacterController>();
-    }
+        private CharacterController controller;
 
-    public override void OnNetworkSpawn()
-    {
-        if (!IsServer)
+        private void Awake()
         {
-            enabled = false;
-            return;
+            controller = GetComponent<CharacterController>();
         }
 
-        OnServerSpawnPlayer();
+        public override void OnNetworkSpawn()
+        {
+            if (!IsServer)
+            {
+                enabled = false;
+                return;
+            }
 
-        base.OnNetworkSpawn();
-    }
+            OnServerSpawnPlayer();
 
-    void OnServerSpawnPlayer()
-    {
-        Transform spawnPoint = ServerPlayerSpawnPoints.Instance.ConsumeNextSpawnPoint();
-        Vector3 spawnPosition = spawnPoint ? spawnPoint.position : Vector3.zero;
-        controller.Move(spawnPosition - transform.position);
+            base.OnNetworkSpawn();
+        }
+
+        void OnServerSpawnPlayer()
+        {
+            Transform spawnPoint = ServerPlayerSpawnPoints.Instance.ConsumeNextSpawnPoint();
+            Vector3 spawnPosition = spawnPoint ? spawnPoint.position : Vector3.zero;
+            controller.Move(spawnPosition - transform.position);
+        }
     }
 }
