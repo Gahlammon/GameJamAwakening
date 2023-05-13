@@ -18,9 +18,6 @@ public class ClientPlayerMove : NetworkBehaviour
     CharacterController m_CharacterController;
 
     [SerializeField]
-    ThirdPersonController m_ThirdPersonController;
-
-    [SerializeField]
     CapsuleCollider m_CapsuleCollider;
 
     [SerializeField]
@@ -37,7 +34,6 @@ public class ClientPlayerMove : NetworkBehaviour
         // objects aside while moving but will not be accelerated by incoming collisions. This means that a primitive
         // CapusleCollider must instead be used for ghost clients to simulate collisions between owning players and 
         // ghost clients.
-        m_ThirdPersonController.enabled = false;
         m_CapsuleCollider.enabled = false;
         m_CharacterController.enabled = false;
     }
@@ -57,7 +53,6 @@ public class ClientPlayerMove : NetworkBehaviour
 
         // player input is only enabled on owning players
         m_PlayerInput.enabled = true;
-        m_ThirdPersonController.enabled = true;
         
         // see the note inside ServerPlayerMove why this step is also necessary for synchronizing initial player
         // position on owning clients

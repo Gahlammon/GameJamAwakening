@@ -21,6 +21,8 @@ namespace Player
 
         public void Move(InputAction.CallbackContext context)
         {
+            playerMovement.SetMoveDirection(context.ReadValue<Vector2>());
+        }
 
         public void Aim(InputAction.CallbackContext context)
         {

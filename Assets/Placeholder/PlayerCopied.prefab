@@ -95,8 +95,6 @@ GameObject:
   - component: {fileID: 1021551417513153853}
   - component: {fileID: -3062321976565574425}
   - component: {fileID: 1730517340117194545}
-  - component: {fileID: 8942477863166821828}
-  - component: {fileID: 370646458838973495}
   - component: {fileID: 6477443173479746500}
   - component: {fileID: 3790990790837619965}
   - component: {fileID: 7784649651348250233}
@@ -174,59 +172,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8942477863166821828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1116025501350672692}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e6e1007a562b3e47920e661deabd321, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MoveSpeed: 2
-  SprintSpeed: 5.335
-  RotationSmoothTime: 0.12
-  SpeedChangeRate: 10
-  LandingAudioClip: {fileID: 0}
-  FootstepAudioClips: []
-  FootstepAudioVolume: 0.5
-  JumpHeight: 1.2
-  Gravity: -15
-  JumpTimeout: 0.5
-  FallTimeout: 0.15
-  Grounded: 0
-  GroundedOffset: -0.14
-  GroundedRadius: 0.28
-  GroundLayers:
-    serializedVersion: 2
-    m_Bits: 2147483647
-  CinemachineCameraTarget: {fileID: 305435815827842718}
-  TopClamp: 70
-  BottomClamp: -30
-  CameraAngleOverride: 0
-  LockCameraPosition: 0
---- !u!114 &370646458838973495
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1116025501350672692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d1aae6b007d4e34eaa5f3ab5dbcbb87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  move: {x: 0, y: 0}
-  look: {x: 0, y: 0}
-  jump: 0
-  sprint: 0
-  analogMovement: 0
-  cursorLocked: 0
-  cursorInputForLook: 0
 --- !u!114 &6477443173479746500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,7 +286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ServerPlayerMove: {fileID: 7784649651348250233}
   m_CharacterController: {fileID: 1730517340117194545}
-  m_ThirdPersonController: {fileID: 8942477863166821828}
+  m_ThirdPersonController: {fileID: 0}
   m_CapsuleCollider: {fileID: 1021551417513153853}
   m_CameraFollow: {fileID: 3520682649310235037}
   m_PlayerInput: {fileID: 6477443173479746500}
