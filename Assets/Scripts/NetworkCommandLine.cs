@@ -5,13 +5,14 @@ using UnityEngine;
 
 public class NetworkCommandLine : MonoBehaviour
 {
-    private NetworkManager netManager;
+    [SerializeField]
+    GameObject canvas;
 
     void Start()
     {
-        netManager = GetComponentInParent<NetworkManager>();
+        canvas.SetActive(false);
 
-        if (Application.isEditor) return;
+        // if (Application.isEditor) return;
 
         var args = GetCommandlineArgs();
 
@@ -20,17 +21,21 @@ public class NetworkCommandLine : MonoBehaviour
             switch (mode)
             {
                 case "server":
-                    netManager.StartServer();
+                    NetworkManager.Singleton.StartServer();
                     break;
                 case "host":
-                    netManager.StartHost();
+                    NetworkManager.Singleton.StartHost();
                     break;
                 case "client":
                     args.TryGetValue("-a", out string address);
-                    netManager.GetComponent<UnityTransport>().SetConnectionData(address, 7777);
-                    netManager.StartClient();
+                    NetworkManager.Singleton.GetComponent<UnityTransport>().SetConnectionData(address, 7777);
+                    NetworkManager.Singleton.StartClient();
                     break;
             }
+        }
+        else
+        {
+            canvas.SetActive(true);
         }
     }
 

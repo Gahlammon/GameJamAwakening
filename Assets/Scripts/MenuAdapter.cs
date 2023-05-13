@@ -11,6 +11,8 @@ public class MenuAdapter : MonoBehaviour
 {
     [SerializeField]
     private GameObject text;
+    [SerializeField]
+    GameObject canvas;
     private string ip;
     private bool valid = false;
 
@@ -39,6 +41,7 @@ public class MenuAdapter : MonoBehaviour
     public void StartHost()
     {
         NetworkManager.Singleton.StartHost();
+        canvas.SetActive(false);
     }
 
     public void StartClient()
@@ -49,5 +52,6 @@ public class MenuAdapter : MonoBehaviour
         }
         NetworkManager.Singleton.GetComponent<UnityTransport>().SetConnectionData(ip, 7777);
         NetworkManager.Singleton.StartClient();
+        canvas.SetActive(false);
     }
 }
