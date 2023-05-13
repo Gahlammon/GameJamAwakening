@@ -77,10 +77,10 @@ GameObject:
   - component: {fileID: 6068149115754199556}
   - component: {fileID: 520397299803528021}
   - component: {fileID: 5021507475015313603}
-  - component: {fileID: 6452312218806428551}
   - component: {fileID: 271237936146074575}
   - component: {fileID: 6358038770779912294}
   - component: {fileID: 8842640971469772446}
+  - component: {fileID: 6452312218806428551}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4710847496902817279}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 790c7ba872734c847b7bd7579e98420e, type: 3}
   m_Name: 
@@ -301,22 +301,6 @@ MonoBehaviour:
   throwStrength: {x: 5, y: 10}
   maxHoldTime: 1
   throwCooldown: 0.2
---- !u!114 &6452312218806428551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4710847496902817279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 951099334
-  AlwaysReplicateAsRoot: 0
-  DontDestroyWithOwner: 0
-  AutoObjectParentSync: 1
 --- !u!114 &271237936146074575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -368,6 +352,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3912f09be9cbecc42930f08c508ecded, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6452312218806428551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4710847496902817279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 951099334
+  AlwaysReplicateAsRoot: 0
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
 --- !u!1 &4710847497281351021
 GameObject:
   m_ObjectHideFlags: 0

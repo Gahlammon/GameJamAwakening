@@ -4,49 +4,57 @@ using UnityEngine;
 using Unity.Netcode;
 using UnityEngine.InputSystem;
 
-[DefaultExecutionOrder(1)]
-[RequireComponent(typeof(CapsuleCollider))]
-[RequireComponent(typeof(CharacterController))]
-[RequireComponent(typeof(PlayerInput))]
-public class PlayerNetworkComponentController : NetworkBehaviour
+namespace Player
 {
-    [Header("References")]
-    [SerializeField]
-    private GameObject pickupColliderGameObject;
-
-    private CapsuleCollider capsuleCollider;
-    private CharacterController characterController;
-    private PlayerInput playerInput;
-
-    private void Awake()
+    [DefaultExecutionOrder(1)]
+    [RequireComponent(typeof(CapsuleCollider))]
+    [RequireComponent(typeof(CharacterController))]
+    [RequireComponent(typeof(PlayerInput))]
+    [RequireComponent(typeof(PlayerMovement))]
+    public class PlayerNetworkComponentController : NetworkBehaviour
     {
-        capsuleCollider = GetComponent<CapsuleCollider>();
-        characterController = GetComponent<CharacterController>();
-        playerInput = GetComponent<PlayerInput>();
+        [Header("References")]
+        [SerializeField]
+        private GameObject pickupColliderGameObject;
 
-        capsuleCollider.enabled = false;
-        characterController.enabled = false;
-        playerInput.enabled = false;
+        private CapsuleCollider capsuleCollider;
+        private CharacterController characterController;
+        private PlayerInput playerInput;
+        private PlayerMovement playerMovement;
 
-        pickupColliderGameObject.SetActive(false);
-    }
-
-    public override void OnNetworkSpawn()
-    {
-        base.OnNetworkSpawn();
-
-        enabled = IsClient;
-        if (!IsOwner)
+        private void Awake()
         {
-            enabled = false;
+            capsuleCollider = GetComponent<CapsuleCollider>();
+            characterController = GetComponent<CharacterController>();
+            playerInput = GetComponent<PlayerInput>();
+            playerMovement = GetComponent<PlayerMovement>();
+
+            capsuleCollider.enabled = false;
             characterController.enabled = false;
-            capsuleCollider.enabled = true;
+            playerInput.enabled = false;
+            playerMovement.enabled = false;
+
             pickupColliderGameObject.SetActive(false);
-            return;
         }
 
-        playerInput.enabled = true;
-        pickupColliderGameObject.SetActive(true);
-        characterController.enabled = true;
+        public override void OnNetworkSpawn()
+        {
+            base.OnNetworkSpawn();
+
+            enabled = IsClient;
+            if (!IsOwner)
+            {
+                enabled = false;
+                characterController.enabled = false;
+                capsuleCollider.enabled = true;
+                pickupColliderGameObject.SetActive(false);
+                return;
+            }
+
+            playerMovement.enabled = true;
+            playerInput.enabled = true;
+            pickupColliderGameObject.SetActive(true);
+            characterController.enabled = true;
+        }
     }
 }

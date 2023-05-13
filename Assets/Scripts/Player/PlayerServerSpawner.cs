@@ -3,9 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.Netcode;
 
+[RequireComponent(typeof(CharacterController))]
 [DefaultExecutionOrder(0)]
 public class PlayerServerSpawner : NetworkBehaviour
 {
+    private CharacterController controller;
+
+    private void Awake()
+    {
+        controller = GetComponent<CharacterController>();
+    }
+
     public override void OnNetworkSpawn()
     {
         if (!IsServer)
@@ -23,6 +31,6 @@ public class PlayerServerSpawner : NetworkBehaviour
     {
         Transform spawnPoint = ServerPlayerSpawnPoints.Instance.ConsumeNextSpawnPoint();
         Vector3 spawnPosition = spawnPoint ? spawnPoint.position : Vector3.zero;
-        transform.position = spawnPosition;
+        controller.Move(spawnPosition - transform.position);
     }
 }
