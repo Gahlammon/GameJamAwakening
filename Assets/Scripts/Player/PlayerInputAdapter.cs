@@ -6,7 +6,6 @@ using UnityEngine.InputSystem;
 namespace Player
 {
     [RequireComponent(typeof(PlayerMovement))]
-    [RequireComponent(typeof(PlayerThrower))]
     public class PlayerInputAdapter : MonoBehaviour
     {
         private PlayerMovement playerMovement;
@@ -22,8 +21,6 @@ namespace Player
 
         public void Move(InputAction.CallbackContext context)
         {
-            playerMovement.SetMoveDirection(context.ReadValue<Vector2>());
-        }
 
         public void Aim(InputAction.CallbackContext context)
         {
