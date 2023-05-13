@@ -123,6 +123,198 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &94037013
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.493584
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.5396137
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &94037014 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 94037013}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &145765258
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.006416
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12.039614
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (27)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &145765259 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 145765258}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &223779324
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.006416
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.0396137
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &223779325 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 223779324}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &265462696
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,6 +430,390 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!1001 &311871189
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.006416
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.5396137
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &311871190 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 311871189}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &315039443
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.993584
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -15.039614
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (30)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &315039444 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 315039443}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &357406706
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.006416
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16.539614
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (25)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &357406707 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 357406706}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &480777708
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.5064163
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12.039614
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (28)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &480777709 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 480777708}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &481249711
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.506416
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.4603863
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &481249712 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 481249711}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &499840020
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.0064163
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.960386
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (18)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &499840021 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 499840020}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &525486514
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,6 +932,1230 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!1001 &581666249
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.006416
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12.039614
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (26)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &581666250 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 581666249}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &600238410
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.0064163
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.5396137
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (31)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &600238411 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 600238410}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &601157451
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.506416
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.960386
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (37)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &601157452 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 601157451}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &630176447
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.0064163
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.4603863
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &630176448 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 630176447}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &640921562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 640921563}
+  m_Layer: 0
+  m_Name: WerewolfRooms
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &640921563
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640921562}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -24.506416, y: -2.4758492, z: -13.460386}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1952143113}
+  - {fileID: 1000092599}
+  - {fileID: 1671313209}
+  - {fileID: 94037014}
+  - {fileID: 1633012663}
+  - {fileID: 630176448}
+  - {fileID: 481249712}
+  - {fileID: 950763522}
+  - {fileID: 1728344916}
+  - {fileID: 223779325}
+  - {fileID: 311871190}
+  - {fileID: 818800574}
+  - {fileID: 1495688151}
+  - {fileID: 1569213178}
+  - {fileID: 1665672752}
+  - {fileID: 694689091}
+  - {fileID: 1433024535}
+  - {fileID: 1112512034}
+  - {fileID: 499840021}
+  - {fileID: 1693651369}
+  - {fileID: 957727979}
+  - {fileID: 1203962680}
+  - {fileID: 1053352220}
+  - {fileID: 1077129498}
+  - {fileID: 1234630595}
+  - {fileID: 357406707}
+  - {fileID: 581666250}
+  - {fileID: 145765259}
+  - {fileID: 480777709}
+  - {fileID: 1999114026}
+  - {fileID: 315039444}
+  - {fileID: 600238411}
+  - {fileID: 1196791760}
+  - {fileID: 1527235004}
+  - {fileID: 1605223347}
+  - {fileID: 670589439}
+  - {fileID: 697744152}
+  - {fileID: 601157452}
+  - {fileID: 1593105193}
+  - {fileID: 1444614005}
+  - {fileID: 1099528239}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &670589438
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15.506416
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.960386
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (35)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &670589439 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 670589438}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &694689090
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.993584
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.5396137
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (15)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &694689091 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 694689090}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &697744151
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 21.506416
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.960386
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (36)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &697744152 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 697744151}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &818800573
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.006416
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12.039614
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &818800574 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 818800573}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &950763521
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.506416
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.4603863
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &950763522 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 950763521}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &957727978
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.506416
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.960386
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (20)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &957727979 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 957727978}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1000092598
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.4935837
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.960386
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &1000092599 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 1000092598}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1053352219
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.9935837
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.5396137
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (22)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &1053352220 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 1053352219}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1077129497
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.4935837
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.5396137
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (23)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &1077129498 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 1077129497}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1099528238
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.006416
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.960386
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (40)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &1099528239 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 1099528238}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1112512033
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.993584
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.539614
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (17)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &1112512034 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 1112512033}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1196791759
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.006416
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.5396137
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (32)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &1196791760 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 1196791759}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1203962679
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.506416
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.460386
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (21)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &1203962680 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 1203962679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1234630594
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.9935837
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.5396137
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (24)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &1234630595 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 1234630594}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1289023369
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,6 +2254,838 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1433024534
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.993584
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.539614
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (16)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &1433024535 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 1433024534}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1444614004
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.493584
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.460386
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (39)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &1444614005 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 1444614004}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1495688150
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.006416
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.539614
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &1495688151 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 1495688150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1527235003
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.5064163
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.9603863
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (33)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &1527235004 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 1527235003}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1569213177
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.9935837
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -15.039614
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &1569213178 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 1569213177}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1593105192
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.493584
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.960386
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (38)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &1593105193 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 1593105192}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1605223346
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15.506416
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.460386
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (34)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &1605223347 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 1605223346}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1633012662
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.493584
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.039613724
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &1633012663 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 1633012662}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1665672751
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.9935837
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -18.039614
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &1665672752 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 1665672751}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1671313208
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.493584
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.4603863
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &1671313209 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 1671313208}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1693651368
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.5064163
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.960386
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (19)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &1693651369 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 1693651368}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1728344915
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.506416
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.4603863
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &1728344916 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 1728344915}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1952143112
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.4935837
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.960386
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &1952143113 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 1952143112}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1989222543
 GameObject:
   m_ObjectHideFlags: 0
@@ -503,6 +3135,70 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1999114025
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 640921563}
+    m_Modifications:
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.5064163
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4758487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16.539614
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838961745794353620, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+      propertyPath: m_Name
+      value: SmallWerewolfRoom (29)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+--- !u!4 &1999114026 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6170793324752835438, guid: 4cbe7d1fb4bbae443807fcfccbd4df08, type: 3}
+  m_PrefabInstance: {fileID: 1999114025}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4820203966301675964
 PrefabInstance:
   m_ObjectHideFlags: 0
