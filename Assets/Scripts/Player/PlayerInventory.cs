@@ -62,20 +62,18 @@ namespace Player
             return inventory[index].Prefab.GetComponent<PickupController>().Type;
         }
 
-        public GameObject GetInstancedObject()
+        public void RemoveSelectedObject()
         {
             if (inventory.Count <= 0)
             {
-                return null;
+                return;
             }
-            GameObject gameObject = Instantiate(inventory[index].Prefab);
             if (--inventory[index].Amount <= 0)
             {
                 inventory.RemoveAt(index);
                 index = ClampIndex(index);
             }
             RemoveObjectEvent?.Invoke(this, null);
-            return gameObject;
         }
 
         private int ClampIndex(int index)
