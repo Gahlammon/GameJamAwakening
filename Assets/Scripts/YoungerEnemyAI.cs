@@ -13,10 +13,6 @@ public class YoungerEnemyAI : NetworkBehaviour
     [Header("Config")]
     [SerializeField]
     private float attackRange = 1;
-    [SerializeField]
-    private float interruptingNoiseThreshold = 100;
-    [SerializeField]
-    private float soundStateForceTime = 5;
 
     [Header("References")]
     [SerializeField]
@@ -35,7 +31,6 @@ public class YoungerEnemyAI : NetworkBehaviour
     private NavMeshAgent agent;
     private Animator animator;
     private GameObject closestPlayer;
-    //private Coroutine runningCoroutine;
 
     public enum YoungerEnemyStates
     {
@@ -95,28 +90,7 @@ public class YoungerEnemyAI : NetworkBehaviour
             nextState = YoungerEnemyStates.Sound;
             nextTarget = source;
         }
-        //else
-        //{
-        //    if (noiseLevel > interruptingNoiseThreshold)
-        //    {
-        //        if (runningCoroutine != null)
-        //        {
-        //            StopCoroutine(runningCoroutine);
-        //            runningCoroutine = null;
-        //        }
-        //        nextState = YoungerEnemyStates.Sound;
-        //        nextTarget = source;
-        //        forceSoundState = true;
-        //        runningCoroutine = StartCoroutine(StopForceSoundCoroutine());
-        //    }
-        //}
     }
-
-    //private IEnumerator StopForceSoundCoroutine()
-    //{
-    //    yield return new WaitForSeconds(soundStateForceTime);
-    //    forceSoundState = true;
-    //}
 
     private void GetPlayers()
     {
@@ -197,8 +171,10 @@ public class YoungerEnemyAI : NetworkBehaviour
     [ServerRpc]
     private void AttackPlayerServerRpc()
     {
-        if (Physics.Raycast(transform.position, closestPlayer.transform.position - transform.position, out RaycastHit hit, Mathf.Infinity, LayerMask.GetMask("Default", "Player")))
+        if (Physics.Raycast(transform.position, closestPlayer.transform.position - transform.position, out RaycastHit hit, attackRange, LayerMask.GetMask("Default", "Player")))
         {
+            state = YoungerEnemyStates.Attack;
+            UseAnimation();
             closestPlayer.GetComponent<PlayerDeathHandler>().KillPlayerClientRpc();
         }
     }
