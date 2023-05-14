@@ -9,11 +9,16 @@ using UnityEngine.InputSystem.LowLevel;
 [RequireComponent(typeof(NavMeshAgent))]
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(Collider))]
+[RequireComponent(typeof(AudioSource))]
 public class YoungerEnemyAI : NetworkBehaviour
 {
     [Header("Config")]
     [SerializeField]
     private float attackRange = 1;
+    [SerializeField]
+    private AudioClip attackClip;
+    [SerializeField]
+    private AudioClip deathClip;
 
     [Header("References")]
     [SerializeField]
@@ -34,6 +39,7 @@ public class YoungerEnemyAI : NetworkBehaviour
     private Animator animator;
     private Collider newCollider;
     private GameObject closestPlayer;
+    private AudioSource audioSource;
 
     public enum YoungerEnemyStates
     {
@@ -52,6 +58,7 @@ public class YoungerEnemyAI : NetworkBehaviour
         agent.angularSpeed = 0;
         animator = GetComponent<Animator>();
         newCollider = GetComponent<Collider>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     public override void OnNetworkSpawn()
@@ -182,6 +189,7 @@ public class YoungerEnemyAI : NetworkBehaviour
             {
                 state = YoungerEnemyStates.Attack;
                 UseAnimation();
+                audioSource.PlayOneShot(attackClip);
                 closestPlayer.GetComponent<PlayerDeathHandler>().KillPlayerClientRpc();
             }
             
@@ -218,6 +226,7 @@ public class YoungerEnemyAI : NetworkBehaviour
                 break;
             case YoungerEnemyStates.Death:
                 animator.Play("BaseLayer.Death");
+                audioSource.PlayOneShot(deathClip);
                 dead = true;
                 break;
         }
