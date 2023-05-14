@@ -149,6 +149,7 @@ MonoBehaviour:
   - {fileID: 2363049119482778566}
   prefabs:
   - {fileID: 1697854402330409931, guid: 7e785fd4d34bd994eb6803ab05bfc93c, type: 3}
+  - {fileID: 6624263684987697677, guid: c13cdd79b5cca3c4a8b115ceeb1fa107, type: 3}
   spawnPropabilityPercent: 75
 --- !u!114 &1589141203940776219
 MonoBehaviour:
