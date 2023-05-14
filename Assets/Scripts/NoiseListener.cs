@@ -33,7 +33,7 @@ public class NoiseListener : NetworkBehaviour
         }
     }
 
-    [ServerRpc]
+    [ServerRpc(RequireOwnership = false)]
     public void AddNoiseServerRpc(float noise, Vector3 sourcePosition)
     {
         currentNoise += noise;
