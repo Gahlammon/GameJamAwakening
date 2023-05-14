@@ -14,6 +14,7 @@ namespace Player
     [RequireComponent(typeof(PlayerInventory))]
     [RequireComponent(typeof(PlayerInputAdapter))]
     [RequireComponent(typeof(ServerInventory))]
+    [RequireComponent(typeof(PlayerAimer))]
     public class PlayerNetworkComponentController : NetworkBehaviour
     {
         [Header("Config")]
@@ -37,6 +38,7 @@ namespace Player
         private PlayerInventory playerInventory;
         private PlayerInputAdapter playerInputAdapter;
         private ServerInventory serverInventory;
+        private PlayerAimer playerAimer;
 
         private void Awake()
         {
@@ -47,6 +49,7 @@ namespace Player
             playerInventory = GetComponent<PlayerInventory>();
             playerInputAdapter = GetComponent<PlayerInputAdapter>();
             serverInventory = GetComponent<ServerInventory>();
+            playerAimer = GetComponent<PlayerAimer>();
 
             capsuleCollider.enabled = false;
             characterController.enabled = false;
@@ -80,6 +83,7 @@ namespace Player
                 CameraPlayerFollower.Instance.SetPlayerTransform(transform);
                 UI.UIInventoryWheel.Instance.SetPlayerInventory(playerInventory);
                 UI.UIThrowController.Instance.SetPlayerInputAdapter(playerInputAdapter);
+                UI.UICrosshair.Instance.SetPlayerAimer(playerAimer);
                 playerMovement.enabled = true;
                 playerInput.enabled = true;
                 pickupColliderGameObject.SetActive(true);
