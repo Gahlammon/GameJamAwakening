@@ -12,6 +12,14 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 43de6ad1577c8d145bfe3b5f5483e5dc, type: 3}
+    - target: {fileID: -4017527917281009099, guid: a0dc40fe29783614db0e50ba53a59bdb, type: 3}
+      propertyPath: noiseLevel
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -4017527917281009099, guid: a0dc40fe29783614db0e50ba53a59bdb, type: 3}
+      propertyPath: noiseRange
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1372711582168062068, guid: a0dc40fe29783614db0e50ba53a59bdb, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.07
