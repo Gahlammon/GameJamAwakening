@@ -12,7 +12,7 @@ public class NoiseGenerator : NetworkBehaviour
             Collider[] hitColliders = Physics.OverlapSphere(transform.position, range, LayerMask.GetMask("Noise"));
             foreach (Collider collider in hitColliders)
             {
-                float noiseToAdd = Mathf.Lerp(noiseLevel, 0, (collider.gameObject.transform.position - transform.position).magnitude / range);
+                float noiseToAdd = Mathf.Lerp(noiseLevel, 0, (collider.ClosestPoint(transform.position) - transform.position).magnitude / range);
                 collider.gameObject.GetComponent<NoiseListener>().AddNoiseServerRpc(noiseToAdd, transform.position);
             }
         }

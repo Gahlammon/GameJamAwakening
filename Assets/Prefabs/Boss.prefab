@@ -265,7 +265,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 1000
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7630922050944255461
 MonoBehaviour:
@@ -279,5 +279,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b22cc958d9ad3644a1104ec46c6c17b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseToAwake: 10
+  noiseToAwake: 1000
   currentNoise: 0
