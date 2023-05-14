@@ -36,7 +36,7 @@ namespace Player
         {
             Transform spawnPoint = ServerPlayerSpawnPoints.Instance.ConsumeNextSpawnPoint();
             Vector3 spawnPosition = spawnPoint ? spawnPoint.position : Vector3.zero;
-            controller.Move(spawnPosition - transform.position);
+            controller.transform.position = spawnPosition;
 
             playerNetworkComponentController.Id = NetworkManager.ConnectedClients.Count;
         }

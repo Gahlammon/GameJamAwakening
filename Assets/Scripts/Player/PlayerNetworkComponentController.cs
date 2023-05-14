@@ -56,27 +56,29 @@ namespace Player
             base.OnNetworkSpawn();
 
             enabled = IsClient;
-            StartCoroutine(UpdateAnimatorCoroutine());
+            StartCoroutine(OnNetworkSpawnCoroutine());
+        }
+
+        private IEnumerator OnNetworkSpawnCoroutine()
+        {
+            yield return null;
+            yield return null;
             if (!IsOwner)
             {
                 enabled = false;
                 characterController.enabled = false;
                 capsuleCollider.enabled = true;
                 pickupColliderGameObject.SetActive(false);
-                return;
             }
-
-            CameraPlayerFollower.Instance.SetPlayerTransform(transform);
-            UI.UIInventoryWheel.Instance.SetPlayerInventory(playerInventory);
-            playerMovement.enabled = true;
-            playerInput.enabled = true;
-            pickupColliderGameObject.SetActive(true);
-            characterController.enabled = true;
-        }
-
-        private IEnumerator UpdateAnimatorCoroutine()
-        {
-            yield return null;
+            else
+            {
+                CameraPlayerFollower.Instance.SetPlayerTransform(transform);
+                UI.UIInventoryWheel.Instance.SetPlayerInventory(playerInventory);
+                playerMovement.enabled = true;
+                playerInput.enabled = true;
+                pickupColliderGameObject.SetActive(true);
+                characterController.enabled = true;
+            }
             yield return null;
             animator.runtimeAnimatorController = animatorControllers[Id - 1];
         }
