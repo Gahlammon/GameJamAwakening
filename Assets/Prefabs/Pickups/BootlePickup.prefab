@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: -5465624231794993944}
   - component: {fileID: -4995878866279184796}
   - component: {fileID: -4017527917281009099}
+  - component: {fileID: 7533717967054384442}
   m_Layer: 6
   m_Name: BootlePickup
   m_TagString: Untagged
@@ -274,6 +275,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noiseLevel: 50
   noiseRange: 10
+--- !u!114 &7533717967054384442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2867778873081097409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89f079cb0cee70c4c90b0e2b0835ebf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionRadius: 5
 --- !u!1 &4476575735183689073
 GameObject:
   m_ObjectHideFlags: 0

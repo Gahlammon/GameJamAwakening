@@ -4,6 +4,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(NoiseGenerator))]
 [RequireComponent(typeof(AudioSource))]
+[RequireComponent(typeof(PickupController))]
 public class NoiseMaker : MonoBehaviour
 {
     [SerializeField]
@@ -11,13 +12,16 @@ public class NoiseMaker : MonoBehaviour
     [SerializeField]
     private float noiseRange = 10;
     private NoiseGenerator noiseGenerator;
+    private PickupController pickupController;
     private AudioSource source;
     private void Start()
     {
         noiseGenerator = GetComponent<NoiseGenerator>();
         source = GetComponent<AudioSource>();
+        pickupController = GetComponent<PickupController>();
+        pickupController.OnCollisionEvent += (_,_) => OnCollision();
     }
-    private void OnCollisionEnter(Collision other)
+    private void OnCollision()
     {
         noiseGenerator.MakeNoise(noiseLevel, noiseRange);
         source.Play();

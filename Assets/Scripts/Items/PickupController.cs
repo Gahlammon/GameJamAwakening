@@ -27,6 +27,8 @@ public class PickupController : NetworkBehaviour
     private bool isThrown = false;
 
     private new Rigidbody rigidbody;
+    public event System.EventHandler OnCollisionEvent;
+    public event System.EventHandler<Collision> OnEnemyCollisionEvent;
 
     private void Start()
     {
@@ -55,10 +57,12 @@ public class PickupController : NetworkBehaviour
     {
         if(collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
         {
+            OnEnemyCollisionEvent?.Invoke(this, collision);
             return;
         }
         if (isThrown)
         {
+            OnCollisionEvent?.Invoke(this, null);
             isThrown = false;
             print("Jebs!");
         }
