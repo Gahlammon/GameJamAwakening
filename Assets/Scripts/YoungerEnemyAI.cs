@@ -16,6 +16,8 @@ public class YoungerEnemyAI : NetworkBehaviour
     [SerializeField]
     private float attackRange = 1;
     [SerializeField]
+    private AudioClip wakeClip;
+    [SerializeField]
     private AudioClip attackClip;
     [SerializeField]
     private AudioClip deathClip;
@@ -210,6 +212,7 @@ public class YoungerEnemyAI : NetworkBehaviour
                 break;
             case YoungerEnemyStates.Wake:
                 animator.Play("BaseLayer.Wake");
+                audioSource.PlayOneShot(wakeClip);
                 agent.enabled = true;
                 break;
             case YoungerEnemyStates.Idle:
