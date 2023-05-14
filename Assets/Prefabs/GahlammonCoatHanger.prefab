@@ -8,9 +8,13 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1213221832461794072, guid: f46177db1fad40b4dadce25534b62118, type: 3}
+      propertyPath: m_Radius
+      value: 0.55
+      objectReference: {fileID: 0}
     - target: {fileID: 1213221832461794073, guid: f46177db1fad40b4dadce25534b62118, type: 3}
       propertyPath: m_RootOrder
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1213221832461794073, guid: f46177db1fad40b4dadce25534b62118, type: 3}
       propertyPath: m_LocalPosition.x
@@ -54,7 +58,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1213221832461794075, guid: f46177db1fad40b4dadce25534b62118, type: 3}
       propertyPath: m_Name
-      value: CoatHanger
+      value: GahlammonCoatHanger
       objectReference: {fileID: 0}
     - target: {fileID: 1213221832461794075, guid: f46177db1fad40b4dadce25534b62118, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -63,6 +67,26 @@ PrefabInstance:
     - target: {fileID: 1213221833334668740, guid: f46177db1fad40b4dadce25534b62118, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1213221833334668741, guid: f46177db1fad40b4dadce25534b62118, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1213221833334668741, guid: f46177db1fad40b4dadce25534b62118, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1213221833334668741, guid: f46177db1fad40b4dadce25534b62118, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1213221833334668741, guid: f46177db1fad40b4dadce25534b62118, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 1213221833334668741, guid: f46177db1fad40b4dadce25534b62118, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.76
       objectReference: {fileID: 0}
     - target: {fileID: 1213221833334668747, guid: f46177db1fad40b4dadce25534b62118, type: 3}
       propertyPath: m_FlipX

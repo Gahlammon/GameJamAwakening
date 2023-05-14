@@ -293,7 +293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animationController: {fileID: 1395919136884095390}
-  walkSpeed: 5
+  walkSpeed: 4
   sprintSpeed: 10
   walkNoiseRange: 1
   walkNoiseLevel: 5
@@ -598,4 +598,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70cf6137be946a24e803d03cc504985d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 7608705929105227253}
