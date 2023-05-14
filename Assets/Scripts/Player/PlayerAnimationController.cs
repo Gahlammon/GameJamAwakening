@@ -37,7 +37,7 @@ namespace Player
         {
             if (dead)
             {
-                if(state == PlayerStates.Death)
+                if (state == PlayerStates.Death)
                 {
                     DeadEvent?.Invoke(this, null);
                     state = PlayerStates.Idle;
@@ -66,7 +66,7 @@ namespace Player
 
         public void SetThrow()
         {
-            if(state != PlayerStates.Throw && state != PlayerStates.Death)
+            if (state != PlayerStates.Throw && state != PlayerStates.Death)
             {
                 state = PlayerStates.Throw;
                 StateMachine();
@@ -75,7 +75,7 @@ namespace Player
 
         public void SetRun()
         {
-            if(state != PlayerStates.Run && state != PlayerStates.Throw && state != PlayerStates.Death)
+            if (state != PlayerStates.Run && state != PlayerStates.Throw && state != PlayerStates.Death)
             {
                 state = PlayerStates.Run;
                 StateMachine();
@@ -88,7 +88,7 @@ namespace Player
 
         public void SetWalk()
         {
-            if(state != PlayerStates.Walk && state != PlayerStates.Throw && state != PlayerStates.Death)
+            if (state != PlayerStates.Walk && state != PlayerStates.Throw && state != PlayerStates.Death)
             {
                 state = PlayerStates.Walk;
                 StateMachine();
@@ -101,7 +101,10 @@ namespace Player
 
         public void SetIdle()
         {
-            state = PlayerStates.Idle;
+            if (state != PlayerStates.Death)
+            {
+                state = PlayerStates.Idle;
+            }
         }
 
         public void SetDeath()
