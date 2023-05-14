@@ -10,7 +10,7 @@ using TMPro;
 public class MenuAdapter : MonoBehaviour
 {
     [SerializeField]
-    private GameObject text;
+    private TextMeshProUGUI text;
     [SerializeField]
     GameObject canvas;
     private string ip;
@@ -18,7 +18,7 @@ public class MenuAdapter : MonoBehaviour
 
     private void Start() 
     {
-        text.SetActive(false);
+        text.color = Color.black;
     }
     public void OnValueChanged(string s)
     {
@@ -28,13 +28,13 @@ public class MenuAdapter : MonoBehaviour
         {
             Debug.Log("valid");
             valid = true;
-            text.SetActive(false);
+            text.color = Color.green;
         }
         else
         {
             Debug.Log("invalid");
             valid = false;
-            text.SetActive(true);
+            text.color = Color.red;
         }
     }
 
