@@ -11,6 +11,9 @@ public class ItemSpawner : NetworkBehaviour
     [SerializeField]
     private GameObject[] prefabs;
 
+    [SerializeField]
+    private float spawnPropabilityPercent;
+
     public override void OnNetworkSpawn()
     {
         base.OnNetworkSpawn();
@@ -22,8 +25,11 @@ public class ItemSpawner : NetworkBehaviour
 
         foreach (Transform targetTransform in positions)
         {
-            GameObject newPickup = Instantiate(prefabs[Random.Range(0, prefabs.Length - 1)], targetTransform.position, Quaternion.identity);
-            newPickup.GetComponent<NetworkObject>().Spawn();
+            if (Random.Range(0, 99) < spawnPropabilityPercent)
+            {
+                GameObject newPickup = Instantiate(prefabs[Random.Range(0, prefabs.Length - 1)], targetTransform.position, Quaternion.identity);
+                newPickup.GetComponent<NetworkObject>().Spawn();
+            }
         }
     }
 }

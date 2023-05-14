@@ -462,6 +462,7 @@ MonoBehaviour:
   - {fileID: 7129553260679351568, guid: 43b204b8e077b304ca5001e55f212dd3, type: 3}
   - {fileID: 7129553260679351568, guid: 973a7788c75544049aa39fcbff35ecc7, type: 3}
   - {fileID: 7129553260679351568, guid: 7f522feafdc4bb940b23d91357eaceb5, type: 3}
+  spawnProbabilityPercent: 50
 --- !u!4 &72423339
 Transform:
   m_ObjectHideFlags: 0
@@ -1104,6 +1105,7 @@ MonoBehaviour:
   - {fileID: 355020275}
   prefabs:
   - {fileID: 1697854402330409931, guid: 7e785fd4d34bd994eb6803ab05bfc93c, type: 3}
+  spawnProbabilityPercent: 0
 --- !u!4 &1718870942
 Transform:
   m_ObjectHideFlags: 0
