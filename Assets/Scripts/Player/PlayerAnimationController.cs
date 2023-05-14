@@ -7,57 +7,90 @@ namespace Player
     [RequireComponent(typeof(Animator))]
     public class PlayerAnimationController : MonoBehaviour
     {
-        private bool toThrow = false;
-        private bool death = false;
-        private bool run = false;
-        private bool walk = false;
-        
+        private enum PlayerStates
+        {
+            Throw,
+            Death,
+            Run,
+            Walk,
+            Idle
+        }
+        private PlayerStates state;
+        private PlayerStates storedState;
+
         private Animator animator;
 
-        private void Start() 
+        private void Start()
         {
             animator = GetComponent<Animator>();
+            state = PlayerStates.Idle;
         }
 
         private void UseAnimation()
         {
-            if(death)
+            StateMachine();
+        }
+
+        private void StateMachine()
+        {
+            switch (state)
             {
-                death = false;
-                animator.Play("BaseLayer.Death");
-            }
-            else if(toThrow)
-            {
-                toThrow = false;
-                animator.Play("BaseLayer.Throw");
-            }
-            else if(run)
-            {
-                animator.Play("BaseLayer.Run");
-            }
-            else if(walk)
-            {
-                animator.Play("BaseLayer.Walk");
-            }
-            else
-            {
-                animator.Play("BaseLayer.Idle");
+                case PlayerStates.Idle:
+                    animator.Play("BaseLayer.Idle");
+                    break;
+                case PlayerStates.Death:
+                    animator.Play("BaseLayer.Death");
+                    break;
+                case PlayerStates.Run:
+                    animator.Play("BaseLayer.Run");
+                    break;
+                case PlayerStates.Walk:
+                    animator.Play("BaseLayer.Walk");
+                    break;
+                case PlayerStates.Throw:
+                    animator.Play("BaseLayer.Throw");
+                    break;
             }
         }
 
         public void SetThrow()
         {
-            toThrow = true;
+            if(state != PlayerStates.Throw && state != PlayerStates.Death)
+            {
+                state = PlayerStates.Throw;
+                StateMachine();
+            }
         }
 
-        public void SetRun(bool on)
+        public void SetRun()
         {
-            run = on;
+            if(state != PlayerStates.Run && state != PlayerStates.Throw && state != PlayerStates.Death)
+            {
+                state = PlayerStates.Run;
+                StateMachine();
+            }
+            else
+            {
+                state = PlayerStates.Run;
+            }
         }
 
-        public void SetWalk(bool on)
+        public void SetWalk()
         {
-            walk = on;
+            if(state != PlayerStates.Walk && state != PlayerStates.Throw && state != PlayerStates.Death)
+            {
+                state = PlayerStates.Walk;
+                StateMachine();
+            }
+            else
+            {
+                state = PlayerStates.Walk;
+            }
+        }
+
+        public void SetIdle()
+        {
+            state = PlayerStates.Idle;
         }
     }
 }

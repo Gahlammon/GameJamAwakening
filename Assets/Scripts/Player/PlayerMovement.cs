@@ -44,20 +44,21 @@ namespace Player
         private void FixedUpdate()
         {
             characterController.SimpleMove(moveDirection * speed);
-            if(Vector3.Equals(moveDirection, Vector3.zero))
+            noiseGenerator.MakeNoise((IsSprinting ? sprintNoiseLevel : walkNoiseLevel) * Time.deltaTime, IsSprinting ? walkNoiseRange : sprintNoiseRange);
+            if(!Vector3.Equals(moveDirection, Vector3.zero))
             {
-                animationController.SetRun(false);
-                animationController.SetWalk(false);
-            }
-            else if(IsSprinting)
-            {
-                animationController.SetRun(true);
-                animationController.SetWalk(false);
+                if(IsSprinting)
+                {
+                    animationController.SetRun();
+                }
+                else
+                {
+                    animationController.SetWalk();
+                }
             }
             else
             {
-                animationController.SetRun(false);
-                animationController.SetWalk(true);
+                animationController.SetIdle();
             }
             float noiseValue = (IsSprinting ? sprintNoiseLevel : walkNoiseLevel) * Time.deltaTime * moveDirection.magnitude;
             noiseGenerator.MakeNoise(noiseValue, IsSprinting ? sprintNoiseRange : walkNoiseRange);
