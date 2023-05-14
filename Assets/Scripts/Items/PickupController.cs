@@ -11,7 +11,9 @@ public class PickupController : NetworkBehaviour
         Bootle,
         Knife,
         Brick,
-        Pipe
+        Pipe,
+        Part,
+        Medalion
     }
 
     [SerializeField]

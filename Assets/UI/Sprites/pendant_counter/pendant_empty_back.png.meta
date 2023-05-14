@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -104,7 +104,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: pendant_empty_back
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1999
+        width: 1228
+        height: 1166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63715ed242682be4a8ad0429eb8a5f9b
+      internalID: 655301830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pendant_empty_back_1
+      rect:
+        serializedVersion: 2
+        x: 1886
+        y: 3148
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 478f93b2b3ad6984a810135560dddd0e
+      internalID: 482412547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pendant_empty_back_2
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 2026
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c447a917fc7f84a90ba55aac90aa67
+      internalID: 1108746092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pendant_empty_back_3
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 2018
+        width: 5
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47da3ea3082672446b54bf736eb7c044
+      internalID: 743503068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pendant_empty_back_4
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 2013
+        width: 4
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e734d6a05fdbc4791ec38dc2fddca9
+      internalID: -1259921496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pendant_empty_back_5
+      rect:
+        serializedVersion: 2
+        x: 1822
+        y: 1999
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187756e123cdad44a8070c6049c38d3e
+      internalID: 1246798065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -115,7 +241,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pendant_empty_back_3: 743503068
+      pendant_empty_back_1: 482412547
+      pendant_empty_back_2: 1108746092
+      pendant_empty_back_4: -1259921496
+      pendant_empty_back: 655301830
+      pendant_empty_back_5: 1246798065
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

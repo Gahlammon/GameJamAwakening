@@ -9,11 +9,15 @@ public class ServerInventory : NetworkBehaviour
     public NetworkVariable<int> Bricks => bricks;
     public NetworkVariable<int> Bootles => bootles;
     public NetworkVariable<int> Knifes => knifes;
+    public NetworkVariable<int> Parts => parts;
+    public NetworkVariable<int> Medalions => medalions;
 
     private NetworkVariable<int> pipes = new NetworkVariable<int>(0);
     private NetworkVariable<int> bricks = new NetworkVariable<int>(0);
     private NetworkVariable<int> bootles = new NetworkVariable<int>(0);
     private NetworkVariable<int> knifes = new NetworkVariable<int>(0);
+    private NetworkVariable<int> parts = new NetworkVariable<int>(0);
+    private NetworkVariable<int> medalions = new NetworkVariable<int>(0);
 
     private Dictionary<PickupController.PickupType, (GameObject prefab, NetworkVariable<int> count)> inventory;
 
@@ -24,7 +28,9 @@ public class ServerInventory : NetworkBehaviour
             { PickupController.PickupType.Bootle, (null, bootles) },
             { PickupController.PickupType.Pipe, (null, pipes) },
             { PickupController.PickupType.Brick, (null, bricks) },
-            { PickupController.PickupType.Knife, (null, pipes) }
+            { PickupController.PickupType.Knife, (null, knifes) },
+            { PickupController.PickupType.Part, (null, parts) },
+            { PickupController.PickupType.Medalion, (null, medalions) }
         };
     }
 

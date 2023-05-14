@@ -51,7 +51,11 @@ namespace Player
                 rigidbody.position = Vector3.Lerp(startingPosition, pickupDestination.position, timer / pickupDuration);
                 yield return null;
             }
-            playerInventory.AddObject(rigidbody.gameObject);
+            PickupController pickupController = rigidbody.GetComponent<PickupController>();
+            if (pickupController.Type != PickupController.PickupType.Part && pickupController.Type != PickupController.PickupType.Medalion)
+            {
+                playerInventory.AddObject(rigidbody.gameObject);
+            }
             serverInventory.PickupPickupServerRpc(pickup.GetComponent<NetworkObject>().NetworkObjectId);
             canPickup = true;
         }

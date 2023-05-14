@@ -13,6 +13,7 @@ namespace Player
     [RequireComponent(typeof(PlayerMovement))]
     [RequireComponent(typeof(PlayerInventory))]
     [RequireComponent(typeof(PlayerInputAdapter))]
+    [RequireComponent(typeof(ServerInventory))]
     public class PlayerNetworkComponentController : NetworkBehaviour
     {
         [Header("Config")]
@@ -35,6 +36,7 @@ namespace Player
         private PlayerMovement playerMovement;
         private PlayerInventory playerInventory;
         private PlayerInputAdapter playerInputAdapter;
+        private ServerInventory serverInventory;
 
         private void Awake()
         {
@@ -44,6 +46,7 @@ namespace Player
             playerMovement = GetComponent<PlayerMovement>();
             playerInventory = GetComponent<PlayerInventory>();
             playerInputAdapter = GetComponent<PlayerInputAdapter>();
+            serverInventory = GetComponent<ServerInventory>();
 
             capsuleCollider.enabled = false;
             characterController.enabled = false;
@@ -84,6 +87,7 @@ namespace Player
             }
             yield return null;
             animator.runtimeAnimatorController = animatorControllers[Id - 1];
+            UI.UIStats.Instance.RegisterServerInventory(serverInventory, Id);
         }
     }
 }

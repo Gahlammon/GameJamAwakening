@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46e804e8d1e4b9b49a42518359ae3098, type: 3}
+  m_Name: PartPickup
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 5003954908720650245, guid: d406a5f8c41304c4b8ff08e775e58513, type: 3}
