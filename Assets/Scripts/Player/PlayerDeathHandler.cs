@@ -11,6 +11,7 @@ public class PlayerDeathHandler : MonoBehaviour
 {
     private PlayerInputAdapter inputAdapter;
     private PlayerAnimationController animationController;
+    private bool dead = false;
 
     private void Awake()
     {
@@ -21,9 +22,13 @@ public class PlayerDeathHandler : MonoBehaviour
     [ClientRpc]
     public void KillPlayerClientRpc()
     {
-        print("Player killed");
-        inputAdapter.EnableMovement = false;
-        gameObject.tag = "Untagged";
-        //call death animation
+        if (!dead)
+        {
+            print("Player killed");
+            inputAdapter.EnableMovement = false;
+            gameObject.tag = "Untagged";
+            animationController.SetDeath();
+            dead = true;
+        }
     }
 }
