@@ -395,6 +395,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c976135bf8f3e2e4eac9235768911699, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animatorControllers:
+  - {fileID: 9100000, guid: 3c2e32fe810d1bd4da54c752022c6ca1, type: 2}
+  - {fileID: 9100000, guid: dbfa0b1429f7f0f4f92a710264fdf283, type: 2}
+  - {fileID: 9100000, guid: 9a83aafc305910e4cb3e9fbf0163ba0a, type: 2}
+  - {fileID: 9100000, guid: 29e5de51404708a4d9fb99f73c30b8c1, type: 2}
   pickupColliderGameObject: {fileID: 1557887983}
 --- !u!114 &8842640971469772446
 MonoBehaviour:

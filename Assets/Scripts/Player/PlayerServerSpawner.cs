@@ -7,13 +7,16 @@ namespace Player
 {
     [DefaultExecutionOrder(0)]
     [RequireComponent(typeof(CharacterController))]
+    [RequireComponent(typeof(PlayerNetworkComponentController))]
     public class PlayerServerSpawner : NetworkBehaviour
     {
         private CharacterController controller;
+        private PlayerNetworkComponentController playerNetworkComponentController;
 
         private void Awake()
         {
             controller = GetComponent<CharacterController>();
+            playerNetworkComponentController = GetComponent<PlayerNetworkComponentController>();
         }
 
         public override void OnNetworkSpawn()
@@ -34,6 +37,8 @@ namespace Player
             Transform spawnPoint = ServerPlayerSpawnPoints.Instance.ConsumeNextSpawnPoint();
             Vector3 spawnPosition = spawnPoint ? spawnPoint.position : Vector3.zero;
             controller.Move(spawnPosition - transform.position);
+
+            playerNetworkComponentController.Id = NetworkManager.ConnectedClients.Count;
         }
     }
 }

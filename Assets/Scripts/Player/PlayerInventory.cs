@@ -59,6 +59,10 @@ namespace Player
 
         public PickupController.PickupType GetHeldPickupType()
         {
+            if (inventory.Count <= 0)
+            {
+                return PickupController.PickupType.Knife;
+            }
             return inventory[index].Prefab.GetComponent<PickupController>().Type;
         }
 

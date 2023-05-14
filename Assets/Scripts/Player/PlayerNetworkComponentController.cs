@@ -12,17 +12,27 @@ namespace Player
     [RequireComponent(typeof(PlayerInput))]
     [RequireComponent(typeof(PlayerMovement))]
     [RequireComponent(typeof(PlayerInventory))]
+    [RequireComponent(typeof(Animator))]
     public class PlayerNetworkComponentController : NetworkBehaviour
     {
+        [Header("Config")]
+        [SerializeField]
+        private List<RuntimeAnimatorController> animatorControllers = new List<RuntimeAnimatorController>();
+
         [Header("References")]
         [SerializeField]
         private GameObject pickupColliderGameObject;
+
+        public int Id { get => id.Value; set => id.Value = value; }
+
+        private NetworkVariable<int> id = new NetworkVariable<int>();
 
         private CapsuleCollider capsuleCollider;
         private CharacterController characterController;
         private PlayerInput playerInput;
         private PlayerMovement playerMovement;
         private PlayerInventory playerInventory;
+        private Animator animator;
 
         private void Awake()
         {
@@ -31,6 +41,7 @@ namespace Player
             playerInput = GetComponent<PlayerInput>();
             playerMovement = GetComponent<PlayerMovement>();
             playerInventory = GetComponent<PlayerInventory>();
+            animator = GetComponent<Animator>();
 
             capsuleCollider.enabled = false;
             characterController.enabled = false;
@@ -45,6 +56,7 @@ namespace Player
             base.OnNetworkSpawn();
 
             enabled = IsClient;
+            StartCoroutine(UpdateAnimatorCoroutine());
             if (!IsOwner)
             {
                 enabled = false;
@@ -60,6 +72,13 @@ namespace Player
             playerInput.enabled = true;
             pickupColliderGameObject.SetActive(true);
             characterController.enabled = true;
+        }
+
+        private IEnumerator UpdateAnimatorCoroutine()
+        {
+            yield return null;
+            yield return null;
+            animator.runtimeAnimatorController = animatorControllers[Id - 1];
         }
     }
 }
