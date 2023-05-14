@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 1179533646387020453}
   - component: {fileID: 6997720238973064735}
   - component: {fileID: -241266751779993310}
+  - component: {fileID: -6196820823054358393}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -282,6 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deadzone: 0.2
+  EnableMovement: 1
 --- !u!114 &4710847496902817268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -537,6 +539,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-6196820823054358393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4710847496902817279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aedb6a52263a33943b3776cd869bb1a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4710847497281351021
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,7 +562,6 @@ GameObject:
   - component: {fileID: 4710847497281351020}
   - component: {fileID: 4710847497281351009}
   - component: {fileID: 4710847497281351022}
-  - component: {fileID: 4710847497281351023}
   m_Layer: 7
   m_Name: Player Mesh
   m_TagString: Player
@@ -621,17 +634,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &4710847497281351023
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4710847497281351021}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}

@@ -15,12 +15,23 @@ namespace Player
         [SerializeField]
         private float deadzone = 0.1f;
 
+        private bool enableMovement = true;
+
         private PlayerMovement playerMovement;
         private PlayerThrower playerThrower;
         private PlayerAimer playerAimer;
         private PlayerInventory playerInventory;
 
         private float startThrowTimestamp;
+
+        public bool EnableMovement
+        {
+            get => enableMovement; set
+            {
+                enableMovement = value;
+                playerMovement.SetMoveDirection(Vector2.zero);
+            }
+        }
 
         private void Start()
         {
@@ -32,19 +43,28 @@ namespace Player
 
         public void Move(InputAction.CallbackContext context)
         {
-            playerMovement.SetMoveDirection(ApplyDeadzoneToInput(context.ReadValue<Vector2>()));
+            if (EnableMovement)
+            {
+                playerMovement.SetMoveDirection(ApplyDeadzoneToInput(context.ReadValue<Vector2>()));
+            }
         }
 
         public void Aim(InputAction.CallbackContext context)
         {
-            playerAimer.SetAimSpeed(ApplyDeadzoneToInput(context.ReadValue<Vector2>()));
+            if (EnableMovement)
+            {
+                playerAimer.SetAimSpeed(ApplyDeadzoneToInput(context.ReadValue<Vector2>()));
+            }
         }
 
         public void Run(InputAction.CallbackContext context)
         {
             if (context.started)
             {
-                playerMovement.IsSprinting = true;
+                if (EnableMovement)
+                {
+                    playerMovement.IsSprinting = true;
+                }
             }
             else if (context.canceled)
             {
@@ -60,23 +80,32 @@ namespace Player
             }
             if (context.canceled)
             {
-                playerThrower.Throw(Time.time - startThrowTimestamp);
+                if (EnableMovement)
+                {
+                    playerThrower.Throw(Time.time - startThrowTimestamp);
+                }
             }
         }
 
         public void PreviousItem(InputAction.CallbackContext context)
         {
-            if (context.started)
+            if (EnableMovement)
             {
-                playerInventory.ChangeIndex(-1);
+                if (context.started)
+                {
+                    playerInventory.ChangeIndex(-1);
+                }
             }
         }
 
         public void NextItem(InputAction.CallbackContext context)
         {
-            if (context.started)
+            if (EnableMovement)
             {
-                playerInventory.ChangeIndex(1);
+                if (context.started)
+                {
+                    playerInventory.ChangeIndex(1);
+                }
             }
         }
 

@@ -34,7 +34,7 @@ public class YoungerEnemyAI : NetworkBehaviour
     private List<ulong> players = new List<ulong>();
     private NavMeshAgent agent;
     private Animator animator;
-    private bool forceSoundState = false;
+    private GameObject closestPlayer;
     //private Coroutine runningCoroutine;
 
     public enum YoungerEnemyStates
@@ -120,7 +120,6 @@ public class YoungerEnemyAI : NetworkBehaviour
 
     private void GetPlayers()
     {
-        print("getting players");
         players = new List<ulong>();
 
         foreach (var client in NetworkManager.Singleton.ConnectedClientsIds)
@@ -158,7 +157,7 @@ public class YoungerEnemyAI : NetworkBehaviour
                     agent.SetDestination(nextTarget);
                     nextState = YoungerEnemyStates.Sound;
                     CheckSightServerRpc();
-                    //TODO add attack
+                    AttackPlayerServerRpc();
                     break;
                 case YoungerEnemyStates.Attack:
                     nextState = YoungerEnemyStates.Idle;
@@ -174,24 +173,33 @@ public class YoungerEnemyAI : NetworkBehaviour
     [ServerRpc]
     private void CheckSightServerRpc()
     {
+        float minDistance = Mathf.Infinity;
         foreach (ulong playerId in players)
         {
-            float minDistance = Mathf.Infinity;
             GameObject player = NetworkManager.Singleton.ConnectedClients[playerId].PlayerObject.gameObject;
             if (Physics.Raycast(transform.position, player.transform.position - transform.position, out RaycastHit hit, Mathf.Infinity, LayerMask.GetMask("Default", "Player")))
             {
                 if (hit.collider.gameObject.CompareTag("Player"))
                 {
-                    float sqrDistance = (nextTarget - transform.position).sqrMagnitude;
+                    float sqrDistance = (hit.transform.position - transform.position).sqrMagnitude;
                     if (sqrDistance < minDistance)
                     {
                         minDistance = sqrDistance;
                         nextState = YoungerEnemyStates.Player;
                         nextTarget = hit.transform.position;
+                        closestPlayer = hit.collider.gameObject;
                     }
-
                 }
             }
+        }
+    }
+
+    [ServerRpc]
+    private void AttackPlayerServerRpc()
+    {
+        if (Physics.Raycast(transform.position, closestPlayer.transform.position - transform.position, out RaycastHit hit, Mathf.Infinity, LayerMask.GetMask("Default", "Player")))
+        {
+            closestPlayer.GetComponent<PlayerDeathHandler>().KillPlayerClientRpc();
         }
     }
 
