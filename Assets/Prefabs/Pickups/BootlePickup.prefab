@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  uISprite: {fileID: -1136025636, guid: 6355917ae934c5843b4b22b698360a1c, type: 3}
+  uISprite: {fileID: 21300000, guid: 0016d4c30faea1147aa4700cf54bc372, type: 3}
 --- !u!114 &2693092276382774766
 MonoBehaviour:
   m_ObjectHideFlags: 0
