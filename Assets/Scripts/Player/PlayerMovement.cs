@@ -44,8 +44,7 @@ namespace Player
         private void FixedUpdate()
         {
             characterController.SimpleMove(moveDirection * speed);
-            noiseGenerator.MakeNoise((IsSprinting ? sprintNoiseLevel : walkNoiseLevel) * Time.deltaTime, IsSprinting ? walkNoiseRange : sprintNoiseRange);
-            if(!Vector3.Equals(moveDirection, Vector3.zero))
+            if(moveDirection != Vector3.zero)
             {
                 if(IsSprinting)
                 {
