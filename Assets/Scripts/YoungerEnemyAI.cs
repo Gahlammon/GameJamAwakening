@@ -109,7 +109,7 @@ public class YoungerEnemyAI : NetworkBehaviour
 
     private void Update()
     {
-        if (IsOwner)
+        if (IsOwner && IsServer)
         {
             switch (state)
             {
@@ -117,7 +117,7 @@ public class YoungerEnemyAI : NetworkBehaviour
                     break;
                 case YoungerEnemyStates.Idle:
                     nextState = YoungerEnemyStates.Idle;
-                    CheckSightServerRpc();
+                    CheckSight();
                     break;
                 case YoungerEnemyStates.Sound:
                     agent.SetDestination(nextTarget);
@@ -129,13 +129,13 @@ public class YoungerEnemyAI : NetworkBehaviour
                     {
                         nextState = YoungerEnemyStates.Sound;
                     }
-                    CheckSightServerRpc();
+                    CheckSight();
                     break;
                 case YoungerEnemyStates.Player:
                     agent.SetDestination(nextTarget);
                     nextState = YoungerEnemyStates.Sound;
-                    CheckSightServerRpc();
-                    AttackPlayerServerRpc();
+                    CheckSight();
+                    AttackPlayer();
                     break;
                 case YoungerEnemyStates.Attack:
                     nextState = YoungerEnemyStates.Idle;
@@ -151,8 +151,7 @@ public class YoungerEnemyAI : NetworkBehaviour
         }
     }
 
-    [ServerRpc]
-    private void CheckSightServerRpc()
+    private void CheckSight()
     {
         float minDistance = Mathf.Infinity;
         foreach (ulong playerId in players)
@@ -175,8 +174,7 @@ public class YoungerEnemyAI : NetworkBehaviour
         }
     }
 
-    [ServerRpc]
-    private void AttackPlayerServerRpc()
+    private void AttackPlayer()
     {
         if (Physics.Raycast(transform.position, closestPlayer.transform.position - transform.position, out RaycastHit hit, attackRange, LayerMask.GetMask("Default", "Player")))
         {

@@ -12,6 +12,7 @@ public class KnifeHit : MonoBehaviour
         pickupController = GetComponent<PickupController>();
         pickupController.OnEnemyCollisionEvent += (_, collision) => OnEnemyCollision(collision);
     }
+
     private void OnEnemyCollision(Collision other)
     {
         var tmp = other.gameObject.GetComponent<YoungerEnemyAI>();

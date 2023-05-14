@@ -480,6 +480,7 @@ GameObject:
   - component: {fileID: 2391164639606260325}
   - component: {fileID: 7753693834059552616}
   - component: {fileID: 1395919136884095390}
+  - component: {fileID: 3406025789700165153}
   m_Layer: 7
   m_Name: Player Sprite
   m_TagString: Player
@@ -598,3 +599,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70cf6137be946a24e803d03cc504985d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3406025789700165153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4710847497281351021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd4bc512bc94c1d458395eed5f3fd2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TransitionStateInfoList: []
+  m_Animator: {fileID: 7608705929105227253}
