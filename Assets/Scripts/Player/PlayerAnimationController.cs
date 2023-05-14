@@ -41,7 +41,7 @@ namespace Player
                 if (state == PlayerStates.Death)
                 {
                     DeadEvent?.Invoke(this, null);
-                    state = PlayerStates.Idle;
+                    animator.enabled = false;
                 }
                 return;
             }
@@ -52,6 +52,7 @@ namespace Player
                     break;
                 case PlayerStates.Death:
                     animator.Play("BaseLayer.Death");
+                    dead = true;
                     break;
                 case PlayerStates.Run:
                     animator.Play("BaseLayer.Run");
@@ -110,8 +111,11 @@ namespace Player
 
         public void SetDeath()
         {
-            state = PlayerStates.Death;
-            StateMachine();
+            if (state != PlayerStates.Death)
+            {
+                state = PlayerStates.Death;
+                StateMachine();
+            }
         }
     }
 }
