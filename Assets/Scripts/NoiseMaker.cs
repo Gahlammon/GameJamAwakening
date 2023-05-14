@@ -20,10 +20,11 @@ public class NoiseMaker : MonoBehaviour
         source = GetComponent<AudioSource>();
         pickupController = GetComponent<PickupController>();
         pickupController.OnCollisionEvent += (_,_) => OnCollision();
+        pickupController.OnEnemyCollisionEvent += (_, _) => OnCollision();
     }
     private void OnCollision()
     {
         noiseGenerator.MakeNoise(noiseLevel, noiseRange);
-        source.Play();
+        AudioSource.PlayClipAtPoint(source.clip, transform.position);
     }
 }
