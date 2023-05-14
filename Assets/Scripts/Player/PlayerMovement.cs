@@ -17,7 +17,7 @@ namespace Player
 
         [Header("Noise")]
         [SerializeField]
-        private float walkNoiseRange = 1;
+        private float walkNoiseRange = 2;
         [SerializeField]
         private float walkNoiseLevel = 1;
         [SerializeField]
@@ -32,7 +32,7 @@ namespace Player
         private PlayerAnimationController animationController;
 
         private Vector3 moveDirection = Vector3.zero;
-        private float speed => IsSprinting ? sprintSpeed : walkSpeed; 
+        private float speed => IsSprinting ? sprintSpeed : walkSpeed;
 
         private void Start()
         {
@@ -44,7 +44,6 @@ namespace Player
         private void FixedUpdate()
         {
             characterController.SimpleMove(moveDirection * speed);
-            noiseGenerator.MakeNoise((IsSprinting ? sprintNoiseLevel : walkNoiseLevel) * Time.deltaTime, IsSprinting ? walkNoiseRange : sprintNoiseRange);
             if(Vector3.Equals(moveDirection, Vector3.zero))
             {
                 animationController.SetRun(false);
@@ -60,6 +59,8 @@ namespace Player
                 animationController.SetRun(false);
                 animationController.SetWalk(true);
             }
+            float noiseValue = (IsSprinting ? sprintNoiseLevel : walkNoiseLevel) * Time.deltaTime * moveDirection.magnitude;
+            noiseGenerator.MakeNoise(noiseValue, IsSprinting ? sprintNoiseRange : walkNoiseRange);
         }
 
         public void SetMoveDirection(Vector2 direction)

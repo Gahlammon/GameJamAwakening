@@ -1,28 +1,43 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Netcode;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.InputSystem.LowLevel;
 
-
-[RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(NavMeshAgent))]
 [RequireComponent(typeof(Animator))]
-public class YoungerEnemyAI : MonoBehaviour
+public class YoungerEnemyAI : NetworkBehaviour
 {
+    [Header("Config")]
     [SerializeField]
-    private float maxNoise = 10;
-    [SerializeField] 
-    private float range = 1;
-    private float currentNoise = 0;
-    public float Speed = 0.1f;
-    private Vector3 nextTarget;
-    private GameObject[] players;
+    private float attackRange = 1;
+    [SerializeField]
+    private float interruptingNoiseThreshold = 100;
+    [SerializeField]
+    private float soundStateForceTime = 5;
+
+    [Header("References")]
+    [SerializeField]
+    private NoiseListener noiseListener;
+
+    [SerializeField]
+    [ReadOnly]
     private YoungerEnemyStates state;
+
+    [SerializeField]
+    [ReadOnly]
     private YoungerEnemyStates nextState;
-    private Rigidbody rb;
+
+    private Vector3 nextTarget;
+    private List<ulong> players = new List<ulong>();
     private NavMeshAgent agent;
     private Animator animator;
-    public enum YoungerEnemyStates 
+    private bool forceSoundState = false;
+    //private Coroutine runningCoroutine;
+
+    public enum YoungerEnemyStates
     {
         Sleep,
         Wake,
@@ -33,48 +48,103 @@ public class YoungerEnemyAI : MonoBehaviour
         Death
     }
 
-    private void Start() 
+    private void Awake()
     {
-        animator = GetComponent<Animator>();
-        if(maxNoise>0)
-        {
-            state = YoungerEnemyStates.Sleep;
-            nextState = YoungerEnemyStates.Sleep;
-            animator.Play("BaseLayer.Sleep");
-            agent.enabled = false;
-        }
-        else
-        {
-            state = YoungerEnemyStates.Idle;
-            nextState = YoungerEnemyStates.Idle;
-            animator.Play("BaseLayer.Idle");
-        }
-        players = GameObject.FindGameObjectsWithTag("Player");
-        rb = GetComponent<Rigidbody>();
-        rb.isKinematic = true;
         agent = GetComponent<NavMeshAgent>();
         agent.angularSpeed = 0;
+        animator = GetComponent<Animator>();
     }
 
-    private void FixedUpdate() 
+    public override void OnNetworkSpawn()
     {
-
-        switch (state)
+        if (IsServer)
         {
-            case YoungerEnemyStates.Sleep:
-            
-                break;
-            case YoungerEnemyStates.Idle:
-                if(!CheckSight())
-                {
+            GetPlayers();
+            NetworkManager.OnClientConnectedCallback += (id) => players.Add(id);
+            NetworkManager.OnClientDisconnectCallback += (id) => players.Remove(id);
+
+            noiseListener.NoiseHeardEvent += (_, noise) => OnNoiseHeardServerRpc(noise.position, noise.value);
+
+            if (noiseListener.Awaken)
+            {
+                state = YoungerEnemyStates.Idle;
+                nextState = YoungerEnemyStates.Idle;
+                animator.Play("BaseLayer.Idle");
+            }
+            else
+            {
+                state = YoungerEnemyStates.Sleep;
+                nextState = YoungerEnemyStates.Sleep;
+                animator.Play("BaseLayer.Sleep");
+                agent.enabled = false;
+            }
+        }
+    }
+
+    [ServerRpc]
+    private void OnNoiseHeardServerRpc(Vector3 source, float noiseLevel)
+    {
+        if (state == YoungerEnemyStates.Sleep)
+        {
+            state = YoungerEnemyStates.Wake;
+            nextTarget = source;
+            UseAnimation();
+        }
+        if (state != YoungerEnemyStates.Player)
+        {
+            nextState = YoungerEnemyStates.Sound;
+            nextTarget = source;
+        }
+        //else
+        //{
+        //    if (noiseLevel > interruptingNoiseThreshold)
+        //    {
+        //        if (runningCoroutine != null)
+        //        {
+        //            StopCoroutine(runningCoroutine);
+        //            runningCoroutine = null;
+        //        }
+        //        nextState = YoungerEnemyStates.Sound;
+        //        nextTarget = source;
+        //        forceSoundState = true;
+        //        runningCoroutine = StartCoroutine(StopForceSoundCoroutine());
+        //    }
+        //}
+    }
+
+    //private IEnumerator StopForceSoundCoroutine()
+    //{
+    //    yield return new WaitForSeconds(soundStateForceTime);
+    //    forceSoundState = true;
+    //}
+
+    private void GetPlayers()
+    {
+        print("getting players");
+        players = new List<ulong>();
+
+        foreach (var client in NetworkManager.Singleton.ConnectedClientsIds)
+        {
+            print(client);
+            players.Add(client);
+        }
+    }
+
+    private void Update()
+    {
+        if (IsOwner)
+        {
+            switch (state)
+            {
+                case YoungerEnemyStates.Sleep:
+                    break;
+                case YoungerEnemyStates.Idle:
                     nextState = YoungerEnemyStates.Idle;
-                }
-                break;
-            case YoungerEnemyStates.Sound:
-                agent.SetDestination(nextTarget);
-                if(!CheckSight())
-                {
-                    if(agent.remainingDistance < 0.1)
+                    CheckSightServerRpc();
+                    break;
+                case YoungerEnemyStates.Sound:
+                    agent.SetDestination(nextTarget);
+                    if (agent.remainingDistance < 0.1)
                     {
                         nextState = YoungerEnemyStates.Idle;
                     }
@@ -82,49 +152,50 @@ public class YoungerEnemyAI : MonoBehaviour
                     {
                         nextState = YoungerEnemyStates.Sound;
                     }
-                }
-                break;
-            case YoungerEnemyStates.Player:
-                agent.SetDestination(nextTarget);
-                if(!CheckSight())
-                {
+                    CheckSightServerRpc();
+                    break;
+                case YoungerEnemyStates.Player:
+                    agent.SetDestination(nextTarget);
                     nextState = YoungerEnemyStates.Sound;
-                }
-                RaycastHit hit;
-                if(Physics.Raycast(transform.position, nextTarget - transform.position, out hit, range))
-                {
-                    if(hit.collider.gameObject.CompareTag("Player"))
-                    {
-                        nextState = YoungerEnemyStates.Attack;
-                    }
-                }
-                break;
-            case YoungerEnemyStates.Attack:
-                nextState = YoungerEnemyStates.Idle;
-                break;
+                    CheckSightServerRpc();
+                    //TODO add attack
+                    break;
+                case YoungerEnemyStates.Attack:
+                    nextState = YoungerEnemyStates.Idle;
+                    break;
+                case YoungerEnemyStates.Wake:
+                    nextState = YoungerEnemyStates.Sound;
+                    break;
+            }
+            state = nextState;
         }
-        state = nextState;
     }
 
-    private bool CheckSight()
+    [ServerRpc]
+    private void CheckSightServerRpc()
     {
-        foreach(GameObject player in players)
+        foreach (ulong playerId in players)
         {
-            RaycastHit hit;
-            if(Physics.Raycast(transform.position, player.transform.position - transform.position, out hit))
+            float minDistance = Mathf.Infinity;
+            GameObject player = NetworkManager.Singleton.ConnectedClients[playerId].PlayerObject.gameObject;
+            if (Physics.Raycast(transform.position, player.transform.position - transform.position, out RaycastHit hit, Mathf.Infinity, LayerMask.GetMask("Default", "Player")))
             {
-                if(hit.collider.gameObject.CompareTag("Player"))
+                if (hit.collider.gameObject.CompareTag("Player"))
                 {
-                    nextState = YoungerEnemyStates.Player;
-                    nextTarget = hit.transform.position;
-                    return true;
+                    float sqrDistance = (nextTarget - transform.position).sqrMagnitude;
+                    if (sqrDistance < minDistance)
+                    {
+                        minDistance = sqrDistance;
+                        nextState = YoungerEnemyStates.Player;
+                        nextTarget = hit.transform.position;
+                    }
+
                 }
             }
-            
         }
-        return false;
     }
 
+    //Called by animation events
     private void UseAnimation()
     {
         switch (state)
@@ -151,24 +222,6 @@ public class YoungerEnemyAI : MonoBehaviour
             case YoungerEnemyStates.Death:
                 animator.Play("BaseLayer.Death");
                 break;
-        }
-    }
-
-    public void Sound(Vector3 source, float amount)
-    {
-        if(state == YoungerEnemyStates.Sleep)
-        {
-            currentNoise += amount;
-            if(currentNoise <= maxNoise)
-            {
-                nextState = YoungerEnemyStates.Wake;
-                nextTarget = source;
-            }
-        }
-        if(state != YoungerEnemyStates.Player)
-        {
-            nextState = YoungerEnemyStates.Sound;
-            nextTarget = source;
         }
     }
 }

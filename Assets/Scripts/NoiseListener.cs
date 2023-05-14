@@ -3,26 +3,49 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Netcode;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 [RequireComponent(typeof(Collider))]
 public class NoiseListener : NetworkBehaviour
 {
     [SerializeField]
-    private float maxNoise;
+    private float noiseToAwake;
 
-    private NetworkVariable<float> currentNoise = new NetworkVariable<float>();
+    [ReadOnly]
+    [SerializeField]
+    private float currentNoise = 0;
 
-    public NetworkVariable<float> CurrentNoise => currentNoise;
+    public bool Awaken { get; private set; } = false;
+
+    public event EventHandler<(Vector3 position, float value)> NoiseHeardEvent;
+    public event EventHandler<bool> AwakeStateChanged;
+
+    private void Awake()
+    {
+        if (IsClient)
+        {
+            enabled = false;
+        }
+        if (currentNoise > noiseToAwake)
+        {
+            Awaken = true;
+        }
+    }
 
     [ServerRpc]
     public void AddNoiseServerRpc(float noise, Vector3 sourcePosition)
     {
-        currentNoise.Value += noise;
-        if (currentNoise.Value >= maxNoise)
+        currentNoise += noise;
+        if (currentNoise >= noiseToAwake)
         {
-            currentNoise.Value = maxNoise;
-            print($"Object awaken: {gameObject.name}");
-            //call event
+            currentNoise = noiseToAwake;
+            if (!Awaken)
+            {
+                print($"Object awaken: {gameObject.name}");
+                Awaken = true;
+                AwakeStateChanged?.Invoke(this, true);
+            }
+            NoiseHeardEvent?.Invoke(this, (sourcePosition, noise));
         }
     }
 }

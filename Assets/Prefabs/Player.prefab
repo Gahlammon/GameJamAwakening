@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2532759204305196137}
   m_Layer: 6
   m_Name: Pickup Collider
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -551,7 +551,7 @@ GameObject:
   - component: {fileID: 4710847497281351023}
   m_Layer: 7
   m_Name: Player Mesh
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
