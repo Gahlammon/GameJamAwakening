@@ -450,7 +450,8 @@ MonoBehaviour:
   - {fileID: 1889574753}
   - {fileID: 765124207}
   prefabs:
-  - {fileID: 5003954908720650245, guid: d406a5f8c41304c4b8ff08e775e58513, type: 3}
+  - {fileID: 7129553260679351568, guid: 973a7788c75544049aa39fcbff35ecc7, type: 3}
+  - {fileID: 7129553260679351568, guid: 7f522feafdc4bb940b23d91357eaceb5, type: 3}
   spawnPropabilityPercent: 100
 --- !u!4 &72423339
 Transform:

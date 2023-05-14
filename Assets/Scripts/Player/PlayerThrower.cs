@@ -48,7 +48,8 @@ namespace Player
             animationController.SetThrow();
             float forceMagnitude = Mathf.Lerp(throwStrength.x, throwStrength.y, holdTime / maxHoldTime);
             Vector3 forceDirection = playerAimer.AimDirection;
-            serverInventory.ThrowPickupServerRpc(playerInventory.GetHeldPickupType(), forceDirection * forceMagnitude);
+            Vector3 calculatedForce = forceDirection * forceMagnitude;
+            serverInventory.ThrowPickupServerRpc(playerInventory.GetHeldPickupType(), calculatedForce);
             playerInventory.RemoveSelectedObject();
             canThrow = false;
             StartCoroutine(CooldownCoroutine());

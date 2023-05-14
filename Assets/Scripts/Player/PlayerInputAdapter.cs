@@ -26,7 +26,7 @@ namespace Player
         private PlayerAimer playerAimer;
         private PlayerInventory playerInventory;
 
-        private float startThrowTimestamp;
+        private float startThrowTimestamp = -1;
 
         public bool EnableMovement
         {
@@ -81,7 +81,10 @@ namespace Player
             if (context.started)
             {
                 ThrowStartEvent?.Invoke(this, null);
-                startThrowTimestamp = Time.time;
+                if (startThrowTimestamp < 0)
+                {
+                    startThrowTimestamp = Time.time;
+                }
             }
             if (context.canceled)
             {
@@ -89,6 +92,7 @@ namespace Player
                 if (EnableMovement)
                 {
                     playerThrower.Throw(Time.time - startThrowTimestamp);
+                    startThrowTimestamp = -1;
                 }
             }
         }
