@@ -15,6 +15,10 @@ namespace Player
         [SerializeField]
         private float deadzone = 0.1f;
 
+        public event System.EventHandler ThrowStartEvent;
+        public event System.EventHandler ThrowEndEvent;
+        public float MaxHoldTime => playerThrower.MaxHoldTime;
+
         private bool enableMovement = true;
 
         private PlayerMovement playerMovement;
@@ -76,10 +80,12 @@ namespace Player
         {
             if (context.started)
             {
+                ThrowStartEvent?.Invoke(this, null);
                 startThrowTimestamp = Time.time;
             }
             if (context.canceled)
             {
+                ThrowEndEvent?.Invoke(this, null);
                 if (EnableMovement)
                 {
                     playerThrower.Throw(Time.time - startThrowTimestamp);

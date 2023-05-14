@@ -22,6 +22,15 @@ namespace UI
 
         public void SetSprite(Sprite sprite, int count)
         {
+            if (sprite == null)
+            {
+                Color transparent = new Color(0, 0, 0, 0);
+                itemImage.color = transparent;
+            }
+            else
+            {
+                itemImage.color = Color.white;
+            }
             itemImage.sprite = sprite;
             countText.text = count.ToString();
         }

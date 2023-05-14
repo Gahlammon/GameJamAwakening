@@ -22,6 +22,8 @@ namespace Player
         [SerializeField]
         private float throwCooldown;
 
+        public float MaxHoldTime => maxHoldTime;
+
         private bool canThrow = true;
 
         private ServerInventory serverInventory;
