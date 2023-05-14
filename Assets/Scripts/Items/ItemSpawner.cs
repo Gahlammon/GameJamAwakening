@@ -27,7 +27,7 @@ public class ItemSpawner : NetworkBehaviour
         {
             if (Random.Range(0, 99) < spawnPropabilityPercent)
             {
-                GameObject newPickup = Instantiate(prefabs[Random.Range(0, prefabs.Length - 1)], targetTransform.position, Quaternion.identity);
+                GameObject newPickup = Instantiate(prefabs[Random.Range(0, prefabs.Length)], targetTransform.position, Quaternion.identity);
                 newPickup.GetComponent<NetworkObject>().Spawn();
             }
         }
