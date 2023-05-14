@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Netcode;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ServerInventory : NetworkBehaviour
@@ -18,6 +19,8 @@ public class ServerInventory : NetworkBehaviour
     private NetworkVariable<int> knifes = new NetworkVariable<int>(0);
     private NetworkVariable<int> parts = new NetworkVariable<int>(0);
     private NetworkVariable<int> medalions = new NetworkVariable<int>(0);
+
+    private const int maxMedalionParts = 3;
 
     private Dictionary<PickupController.PickupType, (GameObject prefab, NetworkVariable<int> count)> inventory;
 
@@ -44,6 +47,14 @@ public class ServerInventory : NetworkBehaviour
         }
     }
 
+    public void RemoveMedalionsFromOthers()
+    {
+        foreach (var client in NetworkManager.Singleton.ConnectedClientsList)
+        {
+            client.PlayerObject.GetComponent<ServerInventory>().Parts.Value = 0;
+        }
+    }
+
     [ServerRpc]
     public void PickupPickupServerRpc(ulong objectId)
     {
@@ -53,11 +64,37 @@ public class ServerInventory : NetworkBehaviour
         {
             PickupController controller = objectToPickup.GetComponent<PickupController>();
             (GameObject prefab, NetworkVariable<int> count) pair = inventory[controller.Type];
-            pair.count.Value++;
-            pair.prefab = objectToPickup.GetComponent<PrefabTracker>().Prefab;
-            inventory[controller.Type] = pair;
-            print($"Object {controller.Type} added");
-            objectToPickup.Despawn();
+
+            if (controller.Type == PickupController.PickupType.Part)
+            {
+                if (pair.count.Value == maxMedalionParts - 1)
+                {
+                    pair.count.Value = 0;
+                    medalions.Value++;
+                    pair.prefab = objectToPickup.GetComponent<PrefabTracker>().Prefab;
+                    inventory[controller.Type] = pair;
+                    print($"Object {controller.Type} added");
+                    objectToPickup.Despawn();
+                    MedalionPartsManager.Instance.RemoveAllPartServerRpc();
+                    RemoveMedalionsFromOthers();
+                }
+                else
+                {
+                    pair.count.Value++;
+                    pair.prefab = objectToPickup.GetComponent<PrefabTracker>().Prefab;
+                    inventory[controller.Type] = pair;
+                    print($"Object {controller.Type} added");
+                    objectToPickup.Despawn();
+                }
+            }
+            else
+            {
+                pair.count.Value++;
+                pair.prefab = objectToPickup.GetComponent<PrefabTracker>().Prefab;
+                inventory[controller.Type] = pair;
+                print($"Object {controller.Type} added");
+                objectToPickup.Despawn();
+            }
         }
     }
 
