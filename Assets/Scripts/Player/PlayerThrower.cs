@@ -45,12 +45,14 @@ namespace Player
                 return;
             }
 
-            animationController.SetThrow();
             float forceMagnitude = Mathf.Lerp(throwStrength.x, throwStrength.y, holdTime / maxHoldTime);
             Vector3 forceDirection = playerAimer.AimDirection;
             Vector3 calculatedForce = forceDirection * forceMagnitude;
             serverInventory.ThrowPickupServerRpc(playerInventory.GetHeldPickupType(), calculatedForce);
-            playerInventory.RemoveSelectedObject();
+            if(playerInventory.RemoveSelectedObject())
+            {
+                animationController.SetThrow();
+            }
             canThrow = false;
             StartCoroutine(CooldownCoroutine());
         }

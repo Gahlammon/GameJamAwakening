@@ -66,11 +66,11 @@ namespace Player
             return inventory[index].Prefab.GetComponent<PickupController>().Type;
         }
 
-        public void RemoveSelectedObject()
+        public bool RemoveSelectedObject()
         {
             if (inventory.Count <= 0)
             {
-                return;
+                return false;
             }
             if (--inventory[index].Amount <= 0)
             {
@@ -78,6 +78,7 @@ namespace Player
                 index = ClampIndex(index);
             }
             RemoveObjectEvent?.Invoke(this, null);
+            return true;
         }
 
         private int ClampIndex(int index)
