@@ -17373,6 +17373,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6705634376427169392, guid: 7e99c06b5c3049648acdcf07766462b2, type: 3}
   m_PrefabInstance: {fileID: 1347472690}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1364118422
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1364118423}
+  m_Layer: 0
+  m_Name: EnemySpawnpoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1364118423
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364118422}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 128265802}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1365008142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26701,4 +26732,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5003064350816607731, guid: e5c119573d0f43c40b09461fdaf96019, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1770479329}
+    - targetCorrespondingSourceObject: {fileID: 5003064350816607731, guid: e5c119573d0f43c40b09461fdaf96019, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1364118423}
   m_SourcePrefab: {fileID: 100100000, guid: e5c119573d0f43c40b09461fdaf96019, type: 3}
