@@ -9,14 +9,20 @@ public class MedalionPartRegistrator : NetworkBehaviour
 
     private void Start()
     {
-        reference = new NetworkObjectReference(NetworkObject);
-        MedalionPartsManager.Instance.RegisterPartServerRpc(reference);
+        if (IsOwner)
+        {
+            reference = new NetworkObjectReference(NetworkObject);
+            MedalionPartsManager.Instance.RegisterPartServerRpc(reference);
+        }
     }
 
     public override void OnDestroy()
     {
         base.OnDestroy();
 
-        MedalionPartsManager.Instance.UnregisterPartServerRpc(reference);
+        if (IsOwner)
+        {
+            MedalionPartsManager.Instance?.UnregisterPartServerRpc(reference);
+        }
     }
 }
