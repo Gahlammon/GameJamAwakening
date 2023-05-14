@@ -8,6 +8,7 @@ using UnityEngine.InputSystem.LowLevel;
 
 [RequireComponent(typeof(NavMeshAgent))]
 [RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(Collider))]
 public class YoungerEnemyAI : NetworkBehaviour
 {
     [Header("Config")]
@@ -31,6 +32,7 @@ public class YoungerEnemyAI : NetworkBehaviour
     private List<ulong> players = new List<ulong>();
     private NavMeshAgent agent;
     private Animator animator;
+    private Collider collider;
     private GameObject closestPlayer;
 
     public enum YoungerEnemyStates
@@ -49,6 +51,7 @@ public class YoungerEnemyAI : NetworkBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.angularSpeed = 0;
         animator = GetComponent<Animator>();
+        collider = GetComponent<Collider>();
     }
 
     public override void OnNetworkSpawn()
@@ -223,6 +226,7 @@ public class YoungerEnemyAI : NetworkBehaviour
     {
         if (IsOwner)
         {
+            collider.enabled = false;
             state = YoungerEnemyStates.Death;
             nextState = YoungerEnemyStates.Death;
             UseAnimation();
