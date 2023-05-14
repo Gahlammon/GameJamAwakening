@@ -131,9 +131,13 @@ public class ElderEnemyAI : NetworkBehaviour
     {
         if (Physics.Raycast(transform.position, closestPlayer.transform.position - transform.position, out RaycastHit hit, attackRange, LayerMask.GetMask("Default", "Player")))
         {
-            state = ElderEnemyStates.Attack;
-            UseAnimation();
-            closestPlayer.GetComponent<PlayerDeathHandler>().KillPlayerClientRpc();
+            if(hit.collider.tag == "Player")
+            {
+                state = ElderEnemyStates.Attack;
+                UseAnimation();
+                closestPlayer.GetComponent<PlayerDeathHandler>().KillPlayerClientRpc();
+            }
+            
         }
     }
 
