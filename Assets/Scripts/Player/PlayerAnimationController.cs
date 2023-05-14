@@ -19,8 +19,9 @@ namespace Player
         private PlayerStates state;
         private PlayerStates storedState;
 
-        private Animator animator;
         public event System.EventHandler DeadEvent;
+
+        private Animator animator;
 
         private void Start()
         {

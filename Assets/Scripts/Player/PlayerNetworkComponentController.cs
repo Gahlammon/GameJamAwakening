@@ -12,7 +12,6 @@ namespace Player
     [RequireComponent(typeof(PlayerInput))]
     [RequireComponent(typeof(PlayerMovement))]
     [RequireComponent(typeof(PlayerInventory))]
-    [RequireComponent(typeof(Animator))]
     [RequireComponent(typeof(PlayerInputAdapter))]
     public class PlayerNetworkComponentController : NetworkBehaviour
     {
@@ -23,6 +22,8 @@ namespace Player
         [Header("References")]
         [SerializeField]
         private GameObject pickupColliderGameObject;
+        [SerializeField]
+        private Animator animator;
 
         public int Id { get => id.Value; set => id.Value = value; }
 
@@ -33,7 +34,6 @@ namespace Player
         private PlayerInput playerInput;
         private PlayerMovement playerMovement;
         private PlayerInventory playerInventory;
-        private Animator animator;
         private PlayerInputAdapter playerInputAdapter;
 
         private void Awake()
@@ -43,7 +43,6 @@ namespace Player
             playerInput = GetComponent<PlayerInput>();
             playerMovement = GetComponent<PlayerMovement>();
             playerInventory = GetComponent<PlayerInventory>();
-            animator = GetComponent<Animator>();
             playerInputAdapter = GetComponent<PlayerInputAdapter>();
 
             capsuleCollider.enabled = false;

@@ -6,9 +6,12 @@ namespace Player
 {
     [RequireComponent(typeof(CharacterController))]
     [RequireComponent(typeof(NoiseGenerator))]
-    [RequireComponent(typeof(PlayerAnimationController))]
     public class PlayerMovement : MonoBehaviour
     {
+        [Header("References")]
+        [SerializeField]
+        private PlayerAnimationController animationController;
+
         [Header("Speed")]
         [SerializeField]
         private float walkSpeed = 5;
@@ -29,7 +32,6 @@ namespace Player
         public bool IsSprinting = false;
         private CharacterController characterController;
         private NoiseGenerator noiseGenerator;
-        private PlayerAnimationController animationController;
 
         private Vector3 moveDirection = Vector3.zero;
         private float speed => IsSprinting ? sprintSpeed : walkSpeed;
@@ -38,7 +40,6 @@ namespace Player
         {
             characterController = GetComponent<CharacterController>();
             noiseGenerator = GetComponent<NoiseGenerator>();
-            animationController = GetComponent<PlayerAnimationController>();
         }
 
         private void FixedUpdate()
