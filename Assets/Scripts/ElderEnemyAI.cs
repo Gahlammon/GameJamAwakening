@@ -120,6 +120,7 @@ public class ElderEnemyAI : NetworkBehaviour
                 minDistance = sqrDistance;
                 nextState = ElderEnemyStates.Player;
                 nextTarget = player.transform.position;
+                nextTarget.y = transform.position.y;
                 closestPlayer = player;
             }
         }
