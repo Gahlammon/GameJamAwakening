@@ -15,10 +15,12 @@ namespace Player
             Walk,
             Idle
         }
+        private bool dead;
         private PlayerStates state;
         private PlayerStates storedState;
 
         private Animator animator;
+        public event System.EventHandler DeadEvent;
 
         private void Start()
         {
@@ -33,6 +35,15 @@ namespace Player
 
         private void StateMachine()
         {
+            if (dead)
+            {
+                if(state == PlayerStates.Death)
+                {
+                    DeadEvent?.Invoke(this, null);
+                    state = PlayerStates.Idle;
+                }
+                return;
+            }
             switch (state)
             {
                 case PlayerStates.Idle:
@@ -91,6 +102,12 @@ namespace Player
         public void SetIdle()
         {
             state = PlayerStates.Idle;
+        }
+
+        public void SetDeath()
+        {
+            state = PlayerStates.Death;
+            StateMachine();
         }
     }
 }
