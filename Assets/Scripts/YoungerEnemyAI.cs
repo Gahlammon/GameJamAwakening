@@ -26,6 +26,7 @@ public class YoungerEnemyAI : NetworkBehaviour
     [ReadOnly]
     private YoungerEnemyStates nextState;
 
+    private bool dead = false;
     private Vector3 nextTarget;
     private List<ulong> players = new List<ulong>();
     private NavMeshAgent agent;
@@ -85,7 +86,7 @@ public class YoungerEnemyAI : NetworkBehaviour
             nextTarget = source;
             UseAnimation();
         }
-        if (state != YoungerEnemyStates.Player)
+        if (state != YoungerEnemyStates.Player && state != YoungerEnemyStates.Death)
         {
             nextState = YoungerEnemyStates.Sound;
             nextTarget = source;
@@ -139,6 +140,9 @@ public class YoungerEnemyAI : NetworkBehaviour
                 case YoungerEnemyStates.Wake:
                     nextState = YoungerEnemyStates.Sound;
                     break;
+                case YoungerEnemyStates.Death:
+                    nextState = YoungerEnemyStates.Death;
+                    break;
             }
             state = nextState;
         }
@@ -182,6 +186,10 @@ public class YoungerEnemyAI : NetworkBehaviour
     //Called by animation events
     private void UseAnimation()
     {
+        if(dead)
+        {
+            animator.enabled = false;
+        }
         switch (state)
         {
             case YoungerEnemyStates.Sleep:
@@ -205,7 +213,19 @@ public class YoungerEnemyAI : NetworkBehaviour
                 break;
             case YoungerEnemyStates.Death:
                 animator.Play("BaseLayer.Death");
+                dead = true;
                 break;
+        }
+    }
+
+    [ServerRpc]
+    public void GetKilledServerRPC()
+    {
+        if (IsOwner)
+        {
+            state = YoungerEnemyStates.Death;
+            nextState = YoungerEnemyStates.Death;
+            UseAnimation();
         }
     }
 }

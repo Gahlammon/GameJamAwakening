@@ -53,6 +53,10 @@ public class PickupController : NetworkBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if(collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+        {
+            return;
+        }
         if (isThrown)
         {
             isThrown = false;
