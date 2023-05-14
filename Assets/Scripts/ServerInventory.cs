@@ -70,13 +70,13 @@ public class ServerInventory : NetworkBehaviour
                 if (pair.count.Value == maxMedalionParts - 1)
                 {
                     pair.count.Value = 0;
-                    medalions.Value++;
                     pair.prefab = objectToPickup.GetComponent<PrefabTracker>().Prefab;
                     inventory[controller.Type] = pair;
                     print($"Object {controller.Type} added");
                     objectToPickup.Despawn();
                     MedalionPartsManager.Instance.RemoveAllPartServerRpc();
                     RemoveMedalionsFromOthers();
+                    medalions.Value++;
                 }
                 else
                 {
