@@ -19,6 +19,7 @@ public class NoiseListener : NetworkBehaviour
 
     public event EventHandler<(Vector3 position, float value)> NoiseHeardEvent;
     public event EventHandler<bool> AwakeStateChanged;
+    public event EventHandler<float> NoiseIncreasedEvent;
 
     private void Awake()
     {
@@ -47,5 +48,6 @@ public class NoiseListener : NetworkBehaviour
             }
             NoiseHeardEvent?.Invoke(this, (sourcePosition, noise));
         }
+        NoiseIncreasedEvent?.Invoke(this, currentNoise / noiseToAwake);
     }
 }
