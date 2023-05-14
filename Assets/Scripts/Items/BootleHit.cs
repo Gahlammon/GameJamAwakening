@@ -8,12 +8,14 @@ public class BootleHit : MonoBehaviour
     [SerializeField]
     private float explosionRadius = 5;
     private PickupController pickupController;
+    private Explode explode;
 
     private void Start()
     {
         pickupController = GetComponent<PickupController>();
         pickupController.OnCollisionEvent += (_, _) => OnHit();
         pickupController.OnEnemyCollisionEvent += (_, collision) => OnEnemyHit(collision);
+        explode = GetComponentInChildren<Explode>();
     }
     private void OnHit()
     {
@@ -27,7 +29,7 @@ public class BootleHit : MonoBehaviour
                 tmp.GetKilledServerRPC();
             }
         }
-        Destroy(gameObject);
+        explode.StartExplode();
     }
 
     private void OnEnemyHit(Collision collision)
@@ -46,6 +48,6 @@ public class BootleHit : MonoBehaviour
                 tmp.GetKilledServerRPC();
             }
         }
-        Destroy(gameObject);
+        explode.StartExplode();
     }
 }
